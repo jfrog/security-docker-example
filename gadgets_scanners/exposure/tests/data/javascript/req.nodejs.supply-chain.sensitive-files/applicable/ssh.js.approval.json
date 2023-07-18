@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential malicious access to sensitive files detected", "Evidence": ["passwd = \"/home/user/.ssh/known_hosts\""]}

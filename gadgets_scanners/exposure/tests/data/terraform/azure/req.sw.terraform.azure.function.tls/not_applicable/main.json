@@ -1,0 +1,319 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 59,
+  "lineage": "33945618-0590-06ce-7894-8cee70a647d6",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_app_service_plan",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_service_environment_id": "",
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/azure-functions-test-rg/providers/Microsoft.Web/serverfarms/azure-functions-test-service-plan",
+            "is_xenon": false,
+            "kind": "Windows",
+            "location": "westeurope",
+            "maximum_elastic_worker_count": 1,
+            "maximum_number_of_workers": 10,
+            "name": "azure-functions-test-service-plan",
+            "per_site_scaling": false,
+            "reserved": false,
+            "resource_group_name": "azure-functions-test-rg",
+            "sku": [
+              {
+                "capacity": 1,
+                "size": "S1",
+                "tier": "Standard"
+              }
+            ],
+            "tags": {},
+            "timeouts": null,
+            "zone_redundant": false
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_function_app",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_service_plan_id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/azure-functions-test-rg/providers/Microsoft.Web/serverfarms/azure-functions-test-service-plan",
+            "app_settings": {},
+            "auth_settings": [
+              {
+                "active_directory": [],
+                "additional_login_params": {},
+                "allowed_external_redirect_urls": [],
+                "default_provider": "",
+                "enabled": false,
+                "facebook": [],
+                "google": [],
+                "issuer": "",
+                "microsoft": [],
+                "runtime_version": "",
+                "token_refresh_extension_hours": 0,
+                "token_store_enabled": false,
+                "twitter": [],
+                "unauthenticated_client_action": ""
+              }
+            ],
+            "client_affinity_enabled": false,
+            "client_cert_mode": "",
+            "connection_string": [],
+            "custom_domain_verification_id": "4DFC028D832DBD8C0BED2166558D437B106A786959AAB6935C59B6CD45674684",
+            "daily_memory_time_quota": 0,
+            "default_hostname": "test-azure-functions234895t.azurewebsites.net",
+            "enable_builtin_logging": true,
+            "enabled": true,
+            "https_only": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/azure-functions-test-rg/providers/Microsoft.Web/sites/test-azure-functions234895t",
+            "identity": [],
+            "key_vault_reference_identity_id": "SystemAssigned",
+            "kind": "functionapp",
+            "location": "westeurope",
+            "name": "test-azure-functions234895t",
+            "os_type": "",
+            "outbound_ip_addresses": "52.137.58.151,52.137.57.93,52.137.58.245,52.137.59.23,52.137.59.63,52.137.57.86,20.50.2.14",
+            "possible_outbound_ip_addresses": "52.137.58.151,52.137.57.93,52.137.58.245,52.137.59.23,52.137.59.63,52.137.57.86,52.137.59.140,52.137.59.159,52.137.59.175,52.137.60.16,52.137.57.89,52.137.60.40,52.137.60.73,52.137.60.171,52.137.57.43,52.137.60.200,52.137.60.221,52.137.60.232,52.137.61.3,52.137.59.39,52.137.61.20,52.137.61.167,52.137.60.23,52.137.61.255,52.137.62.68,52.137.59.229,52.137.62.104,20.73.147.209,20.73.218.65,20.73.218.101,20.50.2.14",
+            "resource_group_name": "azure-functions-test-rg",
+            "site_config": [
+              {
+                "always_on": false,
+                "app_scale_limit": 0,
+                "auto_swap_slot_name": "",
+                "cors": [],
+                "dotnet_framework_version": "v4.0",
+                "elastic_instance_minimum": 0,
+                "ftps_state": "AllAllowed",
+                "health_check_path": "",
+                "http2_enabled": false,
+                "ip_restriction": [],
+                "java_version": "",
+                "linux_fx_version": "",
+                "min_tls_version": "1.2",
+                "pre_warmed_instance_count": 0,
+                "runtime_scale_monitoring_enabled": false,
+                "scm_ip_restriction": [],
+                "scm_type": "None",
+                "scm_use_main_ip_restriction": false,
+                "use_32_bit_worker_process": true,
+                "vnet_route_all_enabled": false,
+                "websockets_enabled": false
+              }
+            ],
+            "site_credential": [
+              {
+                "password": "mfAjei4tuLAfoJgQ3bh357iMng3TrnzQuQxgdl41qLpMs4uezdxcSKGcTZCY",
+                "username": "$test-azure-functions234895t"
+              }
+            ],
+            "source_control": [
+              {
+                "branch": "master",
+                "manual_integration": false,
+                "repo_url": "",
+                "rollback_enabled": false,
+                "use_mercurial": false
+              }
+            ],
+            "storage_account_access_key": "c6WmcF4T0UNXJZkoq1Lly9sKd5RvN1Jx+lIFoJ7G7OHkBpK9mARSFQiEX1l+EojanreFPCQYWfOW+AStVTXVdQ==",
+            "storage_account_name": "functionsapptestsa213234",
+            "storage_connection_string": "DefaultEndpointsProtocol=https;AccountName=functionsapptestsa213234;AccountKey=c6WmcF4T0UNXJZkoq1Lly9sKd5RvN1Jx+lIFoJ7G7OHkBpK9mARSFQiEX1l+EojanreFPCQYWfOW+AStVTXVdQ==;EndpointSuffix=core.windows.net",
+            "tags": null,
+            "timeouts": null,
+            "version": "~1"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "storage_account_access_key"
+              }
+            ]
+          ],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_app_service_plan.example",
+            "azurerm_resource_group.example",
+            "azurerm_storage_account.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/azure-functions-test-rg",
+            "location": "westeurope",
+            "name": "azure-functions-test-rg",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_storage_account",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "access_tier": "Hot",
+            "account_kind": "StorageV2",
+            "account_replication_type": "LRS",
+            "account_tier": "Standard",
+            "allow_blob_public_access": false,
+            "azure_files_authentication": [],
+            "blob_properties": [
+              {
+                "change_feed_enabled": false,
+                "container_delete_retention_policy": [],
+                "cors_rule": [],
+                "default_service_version": "",
+                "delete_retention_policy": [],
+                "last_access_time_enabled": false,
+                "versioning_enabled": false
+              }
+            ],
+            "custom_domain": [],
+            "customer_managed_key": [],
+            "enable_https_traffic_only": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/azure-functions-test-rg/providers/Microsoft.Storage/storageAccounts/functionsapptestsa213234",
+            "identity": [],
+            "infrastructure_encryption_enabled": false,
+            "is_hns_enabled": false,
+            "large_file_share_enabled": null,
+            "location": "westeurope",
+            "min_tls_version": "TLS1_0",
+            "name": "functionsapptestsa213234",
+            "network_rules": [
+              {
+                "bypass": [
+                  "AzureServices"
+                ],
+                "default_action": "Allow",
+                "ip_rules": [],
+                "private_link_access": [],
+                "virtual_network_subnet_ids": []
+              }
+            ],
+            "nfsv3_enabled": false,
+            "primary_access_key": "c6WmcF4T0UNXJZkoq1Lly9sKd5RvN1Jx+lIFoJ7G7OHkBpK9mARSFQiEX1l+EojanreFPCQYWfOW+AStVTXVdQ==",
+            "primary_blob_connection_string": "DefaultEndpointsProtocol=https;BlobEndpoint=https://functionsapptestsa213234.blob.core.windows.net/;AccountName=functionsapptestsa213234;AccountKey=c6WmcF4T0UNXJZkoq1Lly9sKd5RvN1Jx+lIFoJ7G7OHkBpK9mARSFQiEX1l+EojanreFPCQYWfOW+AStVTXVdQ==",
+            "primary_blob_endpoint": "https://functionsapptestsa213234.blob.core.windows.net/",
+            "primary_blob_host": "functionsapptestsa213234.blob.core.windows.net",
+            "primary_connection_string": "DefaultEndpointsProtocol=https;AccountName=functionsapptestsa213234;AccountKey=c6WmcF4T0UNXJZkoq1Lly9sKd5RvN1Jx+lIFoJ7G7OHkBpK9mARSFQiEX1l+EojanreFPCQYWfOW+AStVTXVdQ==;EndpointSuffix=core.windows.net",
+            "primary_dfs_endpoint": "https://functionsapptestsa213234.dfs.core.windows.net/",
+            "primary_dfs_host": "functionsapptestsa213234.dfs.core.windows.net",
+            "primary_file_endpoint": "https://functionsapptestsa213234.file.core.windows.net/",
+            "primary_file_host": "functionsapptestsa213234.file.core.windows.net",
+            "primary_location": "westeurope",
+            "primary_queue_endpoint": "https://functionsapptestsa213234.queue.core.windows.net/",
+            "primary_queue_host": "functionsapptestsa213234.queue.core.windows.net",
+            "primary_table_endpoint": "https://functionsapptestsa213234.table.core.windows.net/",
+            "primary_table_host": "functionsapptestsa213234.table.core.windows.net",
+            "primary_web_endpoint": "https://functionsapptestsa213234.z6.web.core.windows.net/",
+            "primary_web_host": "functionsapptestsa213234.z6.web.core.windows.net",
+            "queue_encryption_key_type": "Service",
+            "queue_properties": [
+              {
+                "cors_rule": [],
+                "hour_metrics": [
+                  {
+                    "enabled": true,
+                    "include_apis": true,
+                    "retention_policy_days": 7,
+                    "version": "1.0"
+                  }
+                ],
+                "logging": [
+                  {
+                    "delete": false,
+                    "read": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0",
+                    "write": false
+                  }
+                ],
+                "minute_metrics": [
+                  {
+                    "enabled": false,
+                    "include_apis": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0"
+                  }
+                ]
+              }
+            ],
+            "resource_group_name": "azure-functions-test-rg",
+            "routing": [],
+            "secondary_access_key": "qZdIuENnp/LBF2AIqkPk0TW4DWytLg1RuxSKAJ9jQ6kMbW42QwToKFy3OCre1TVZ0OjiV/Bh2IIB+AStozw3VQ==",
+            "secondary_blob_connection_string": "",
+            "secondary_blob_endpoint": null,
+            "secondary_blob_host": null,
+            "secondary_connection_string": "DefaultEndpointsProtocol=https;AccountName=functionsapptestsa213234;AccountKey=qZdIuENnp/LBF2AIqkPk0TW4DWytLg1RuxSKAJ9jQ6kMbW42QwToKFy3OCre1TVZ0OjiV/Bh2IIB+AStozw3VQ==;EndpointSuffix=core.windows.net",
+            "secondary_dfs_endpoint": null,
+            "secondary_dfs_host": null,
+            "secondary_file_endpoint": null,
+            "secondary_file_host": null,
+            "secondary_location": "",
+            "secondary_queue_endpoint": null,
+            "secondary_queue_host": null,
+            "secondary_table_endpoint": null,
+            "secondary_table_host": null,
+            "secondary_web_endpoint": null,
+            "secondary_web_host": null,
+            "share_properties": [
+              {
+                "cors_rule": [],
+                "retention_policy": [
+                  {
+                    "days": 7
+                  }
+                ],
+                "smb": []
+              }
+            ],
+            "shared_access_key_enabled": true,
+            "static_website": [],
+            "table_encryption_key_type": "Service",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_storage_bucket_iam_member",
+      "name": "MyDemoMethod",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "role": "roles/storage.admin",
+            "member": "user:example@example.com"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable functions urlsplit/urlparse are called with a non-constant argument", "Evidence": ["urlparse(url=val)", "urlparse(urlstring=val)", "urlparse(val)"]}

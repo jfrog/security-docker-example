@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "server_side_encryption='' was detected", "Evidence": ["            \"server_side_encryption\": \"\",\n"]}

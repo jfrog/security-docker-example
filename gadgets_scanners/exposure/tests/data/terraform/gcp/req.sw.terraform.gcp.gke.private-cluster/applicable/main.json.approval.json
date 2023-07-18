@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "enable_private_endpoint=false was detected", "Evidence": ["                \"enable_private_endpoint\": false\n"]}

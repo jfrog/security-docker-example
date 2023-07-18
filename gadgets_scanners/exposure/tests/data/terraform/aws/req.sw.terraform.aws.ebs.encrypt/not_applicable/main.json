@@ -1,0 +1,42 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 7,
+  "lineage": "12e19399-454a-4c48-510f-2cbd258cdea2",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_ebs_volume",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ec2:us-west-2:000000000000:volume/vol-abbb0af1",
+            "availability_zone": "us-west-2a",
+            "encrypted": true,
+            "id": "vol-abbb0af1",
+            "iops": 0,
+            "kms_key_id": "arn:aws:kms:us-west-2:000000000000:key/ae4d1a09-597b-42ea-8253-36a4bd787aeb",
+            "multi_attach_enabled": false,
+            "outpost_arn": "",
+            "size": 40,
+            "snapshot_id": "",
+            "tags": {
+              "Name": "HelloWorld"
+            },
+            "tags_all": {
+              "Name": "HelloWorld"
+            },
+            "throughput": 0,
+            "type": "gp2"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

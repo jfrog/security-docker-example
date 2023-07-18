@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function create_repo is called with a non-constant argument", "Evidence": ["create_repo(repo_url, 'hg', repo_dir='/tmp/test_hg_repo')", "create_repo(url=repo_url, vcs='hg', repo_dir='/tmp/test_hg_repo')"]}

@@ -1,0 +1,8 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.nn_ops.fractional_avg_pool_v2 is called, The vulnerable function tensorflow.nn_ops.fractional_max_pool_v2 is called",
+    "Evidence": [
+        "nn_ops.fractional_avg_pool_v2(arg_0,arg_1,arg_2,arg_3,seed=seed,)",
+        "nn_ops.fractional_max_pool_v2(arg_0, arg_1, arg_2, arg_3, seed=seed, )"
+    ]
+}

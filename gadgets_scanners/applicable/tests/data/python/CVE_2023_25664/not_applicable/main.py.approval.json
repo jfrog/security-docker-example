@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.AvgPoolGrad is never called",
+    "Evidence": []
+}

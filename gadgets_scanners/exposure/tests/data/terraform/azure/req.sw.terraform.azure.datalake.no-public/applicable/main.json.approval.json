@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public access to Data Lake Storage was detected", "Evidence": ["            \"firewall_state\": \"Disabled\"\n"]}

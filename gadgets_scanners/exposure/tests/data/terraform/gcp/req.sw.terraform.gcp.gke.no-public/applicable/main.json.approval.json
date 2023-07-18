@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public access (0.0.0.0/0) to the container control plane was detected", "Evidence": ["                    \"cidr_block\": \"0.0.0.0/0\",\n"]}

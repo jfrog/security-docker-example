@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "Insecure uses admin socket address was not detected",
+    "Evidence": []
+}

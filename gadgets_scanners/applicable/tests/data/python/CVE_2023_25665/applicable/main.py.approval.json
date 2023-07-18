@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.SparseSparseMaximum is called",
+    "Evidence": [
+        "tf.raw_ops.SparseSparseMaximum(\n a_indices=[[1]],\n a_values =[ 0.1 ],\n a_shape = [2],\n b_indices=[[]],\n b_values =[2 ],\n b_shape = [2],\n)"
+    ]
+}

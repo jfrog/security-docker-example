@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "NGINX web server is not configured to use secure TLS version.", "Evidence": ["    ssl_protocols SSLv2 SSLv3 TLSv1;\n", "    ssl_protocols SSLv2 SSLv3 TLSv1;\n", "    ssl_protocols SSLv2 SSLv3 TLSv1;\n"]}

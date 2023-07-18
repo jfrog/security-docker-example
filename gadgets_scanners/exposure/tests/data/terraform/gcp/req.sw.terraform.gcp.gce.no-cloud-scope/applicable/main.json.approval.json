@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Full cloud access was detected", "Evidence": ["                  \"https://www.googleapis.com/auth/cloud-platform\"\n"]}

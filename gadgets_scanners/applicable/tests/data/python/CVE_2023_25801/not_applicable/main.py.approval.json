@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function tensorflow.nn_ops.fractional_avg_pool_v2 is never called, The vulnerable function tensorflow.nn_ops.fractional_max_pool_v2 is never called",
+    "Evidence": []
+}

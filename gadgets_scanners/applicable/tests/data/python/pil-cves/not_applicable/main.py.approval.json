@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function PIL.Image.open is never called",
+    "Evidence": []
+}

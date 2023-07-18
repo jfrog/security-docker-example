@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable paramiko.server is used", "Evidence": ["from paramiko.server import ServerInterface"]}

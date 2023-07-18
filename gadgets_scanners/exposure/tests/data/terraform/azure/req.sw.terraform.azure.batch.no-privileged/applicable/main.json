@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_batch_pool",
+      "name": "MyDemoMethod",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "start_task": [
+              {
+                "user_identity": [
+                  {
+                    "auto_user": [
+                      {
+                        "elevation_level": "Admin"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

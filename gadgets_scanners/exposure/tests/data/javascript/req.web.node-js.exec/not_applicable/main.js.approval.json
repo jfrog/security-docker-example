@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "Potential shelljs.exec invocation was not detected", "Evidence": []}

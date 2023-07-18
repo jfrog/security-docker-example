@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "FTP deployment was detected", "Evidence": ["                \"ftps_state\": \"AllAllowed\",\n"]}

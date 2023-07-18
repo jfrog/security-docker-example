@@ -1,0 +1,50 @@
+{
+  "static_resources": {
+    "listeners": [
+      {
+        "filter_chains": [
+          {
+            "transport_socket": {
+              "typed_config": {
+                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext"
+              }
+            }
+          },
+          {
+            "transport_socket": {
+              "typed_config": {
+                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext",
+                "common_tls_context": {
+                  "validation_context": {
+                    "verify_subject_alt_name": [
+                      "bla bla"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "clusters": [
+      {
+        "transport_socket": {
+          "typed_config": {
+            "common_tls_context": {
+              "validation_context": {
+                "trusted_ca": {
+                  "filename": "certs/cacert.pem"
+                },
+                "verify_subject_alt_name": [
+                  "bla",
+                  "bla"
+                ]
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

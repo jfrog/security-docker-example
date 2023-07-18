@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function tensorflow.sparse.split is called with a non-constant argument", "Evidence": ["tf.sparse.split(input())", "tf.sparse.split(sp_input=input())"]}

@@ -1,0 +1,123 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 7,
+  "lineage": "9b62b35c-1311-7bf3-6791-775744cf39e0",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_instance",
+      "name": "app_server",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "ami": "ami-830c94e3",
+            "arn": "arn:aws:ec2:us-west-2:000000000000:instance/i-dc322f6e5f1fe1ffc",
+            "associate_public_ip_address": true,
+            "availability_zone": "us-west-2a",
+            "capacity_reservation_specification": [],
+            "cpu_core_count": null,
+            "cpu_threads_per_core": null,
+            "credit_specification": [
+              {
+                "cpu_credits": "standard"
+              }
+            ],
+            "disable_api_termination": false,
+            "ebs_block_device": [],
+            "ebs_optimized": false,
+            "enclave_options": [],
+            "ephemeral_block_device": [],
+            "get_password_data": false,
+            "hibernation": null,
+            "host_id": null,
+            "iam_instance_profile": "",
+            "id": "i-dc322f6e5f1fe1ffc",
+            "instance_initiated_shutdown_behavior": "",
+            "instance_state": "running",
+            "instance_type": "t2.micro",
+            "ipv6_address_count": 0,
+            "ipv6_addresses": [],
+            "key_name": "None",
+            "launch_template": [],
+            "metadata_options": [],
+            "monitoring": false,
+            "network_interface": [],
+            "outpost_arn": "",
+            "password_data": "",
+            "placement_group": "",
+            "placement_partition_number": null,
+            "primary_network_interface_id": "eni-7afde3d5",
+            "private_dns": "ip-10-239-16-192.us-west-2.compute.internal",
+            "private_ip": "10.239.16.192",
+            "public_dns": "ec2-54-214-114-100.us-west-2.compute.amazonaws.com",
+            "public_ip": "54.214.114.100",
+            "root_block_device": [
+              {
+                "delete_on_termination": true,
+                "device_name": "/dev/sda1",
+                "encrypted": false,
+                "iops": 0,
+                "kms_key_id": "",
+                "tags": {},
+                "throughput": 0,
+                "volume_id": "vol-6e8c598e",
+                "volume_size": 8,
+                "volume_type": "gp2"
+              }
+            ],
+            "secondary_private_ips": [],
+            "security_groups": [],
+            "source_dest_check": true,
+            "subnet_id": "subnet-443586f0",
+            "tags": {
+              "Name": "ExampleAppServerInstance"
+            },
+            "tags_all": {
+              "Name": "ExampleAppServerInstance"
+            },
+            "tenancy": "default",
+            "timeouts": null,
+            "user_data": null,
+            "user_data_base64": null,
+            "volume_tags": null,
+            "vpc_security_group_ids": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTIwMDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_kinesis_stream",
+      "name": "bad_example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:kinesis:us-west-2:000000000000:stream/test_stream",
+            "encryption_type": "KMS",
+            "enforce_consumer_deletion": false,
+            "id": "arn:aws:kinesis:us-west-2:000000000000:stream/test_stream",
+            "kms_key_id": "1a606be8-6873-4fac-817e-226f3a77d8ef",
+            "name": "test_stream",
+            "retention_period": 24,
+            "shard_count": 1,
+            "shard_level_metrics": [],
+            "stream_mode_details": [],
+            "tags": {},
+            "tags_all": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6NzIwMDAwMDAwMDAwMCwidXBkYXRlIjo3MjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0="
+        }
+      ]
+    }
+  ]
+}

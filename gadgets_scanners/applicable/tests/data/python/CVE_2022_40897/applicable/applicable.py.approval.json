@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function find_external_links is called",
+    "Evidence": [
+        "index.find_external_links(url, response.text)"
+    ]
+}

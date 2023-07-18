@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Legacy ABAC authorization was detected", "Evidence": ["            \"enable_legacy_abac\": true,\n"]}

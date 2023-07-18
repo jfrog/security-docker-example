@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable lxml.html.clean.Cleaner class is used", "Evidence": ["Cleaner", "Cleaner(remove_unknown_tags=False)", "clean.Cleaner", "cleaner", "cleaner"]}

@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential use of weak ciphers was detected", "Evidence": ["ARC2.new(b\"secret\", ARC2.MODE_CBC)"]}

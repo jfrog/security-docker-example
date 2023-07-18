@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function PIL.Image.open is called",
+    "Evidence": [
+        "Image.open(fp=sys.argv[1])"
+    ]
+}

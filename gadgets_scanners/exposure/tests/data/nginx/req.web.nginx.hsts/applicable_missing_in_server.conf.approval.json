@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The option \"Strict Transport Security\" which protects against HSTS attacks is not set for nginx", "Evidence": ["  server { # simple load balancing\n", "http {\n"]}

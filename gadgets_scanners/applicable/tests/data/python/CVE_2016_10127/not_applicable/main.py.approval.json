@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "No references to the vulnerable functions with user input were found",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

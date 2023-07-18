@@ -1,0 +1,46 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 9,
+  "lineage": "4be9476d-6939-f04d-0472-716d0ba94ef2",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_efs_file_system",
+      "name": "foo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:elasticfilesystem:us-west-2:000000000000:file-system/fs-cd867fc5220b7391",
+            "availability_zone_id": "",
+            "availability_zone_name": "",
+            "creation_token": "my-product",
+            "dns_name": "fs-cd867fc5220b7391.efs.us-west-2.amazonaws.com",
+            "encrypted": true,
+            "id": "fs-cd867fc5220b7391",
+            "kms_key_id": "",
+            "lifecycle_policy": [],
+            "number_of_mount_targets": 0,
+            "owner_id": "",
+            "performance_mode": "",
+            "provisioned_throughput_in_mibps": 0,
+            "size_in_bytes": [],
+            "tags": {
+              "Name": "MyProduct"
+            },
+            "tags_all": {
+              "Name": "MyProduct"
+            },
+            "throughput_mode": "bursting"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable Django password reset functionality is enabled",
+    "Evidence": [
+        "include(\"accounts.urls\")",
+        "include(\"django.contrib.auth.urls\")"
+    ]
+}

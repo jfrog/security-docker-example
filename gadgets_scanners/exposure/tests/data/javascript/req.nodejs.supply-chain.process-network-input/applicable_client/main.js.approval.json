@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential malicious transfer of network input to a process was detected", "Evidence": ["socket.pipe(myREPL.stdout)"]}

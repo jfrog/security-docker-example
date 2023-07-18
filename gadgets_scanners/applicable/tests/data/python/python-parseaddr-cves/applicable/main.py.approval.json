@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function parseaddr is called with a non-constant argument", "Evidence": ["parseaddr(get_user_input())"]}

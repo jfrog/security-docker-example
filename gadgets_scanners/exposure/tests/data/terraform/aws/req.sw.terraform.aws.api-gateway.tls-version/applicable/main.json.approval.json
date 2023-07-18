@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "security_policy!=TLS_1_2 was detected", "Evidence": ["            \"security_policy\": \"\",\n"]}

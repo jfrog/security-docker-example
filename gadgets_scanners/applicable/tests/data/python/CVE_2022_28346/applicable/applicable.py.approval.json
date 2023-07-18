@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable functions QuerySet.annotate(), .aggregate(), .extra() are called with a non-constant argument", "Evidence": ["Book.objects.aggregate(average_price=Avg('price'))", "Publisher.objects.annotate(num_books=Count('book'))", "Store.objects.extra(select={'is_recent': \"pub_date > '2006-01-01'\"})"]}

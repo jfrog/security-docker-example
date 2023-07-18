@@ -1,0 +1,29 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable class flask.session is instantiated with the attribute permanent set to True",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2023_30861/applicable/applicable_set_true.py",
+                            "session.permanent = True",
+                            "3",
+                            "The vulnerable class flask.session is instantiated with the attribute permanent set to True"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

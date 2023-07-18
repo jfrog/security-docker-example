@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "restrict_public_buckets=false was detected", "Evidence": ["            \"restrict_public_buckets\": false\n"]}

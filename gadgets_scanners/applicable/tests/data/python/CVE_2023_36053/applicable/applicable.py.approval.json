@@ -1,0 +1,35 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function django.forms.EmailField is called, The vulnerable function django.forms.URLField is called",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2023_36053/applicable/applicable.py",
+                            "forms.EmailField()",
+                            "6",
+                            "The vulnerable function django.forms.EmailField is called"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2023_36053/applicable/applicable.py",
+                            "forms.URLField(label=\"Your website\", required=False)",
+                            "7",
+                            "The vulnerable function django.forms.URLField is called"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

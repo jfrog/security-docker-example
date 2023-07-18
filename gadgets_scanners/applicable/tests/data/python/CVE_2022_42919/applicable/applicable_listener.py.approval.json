@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable functions set_start_method/get_context or connection.Listener and connection.Connection.recv are called with external or unsafe input",
+    "Evidence": [
+        "Listener(address, authkey=b\"secret password\")"
+    ]
+}

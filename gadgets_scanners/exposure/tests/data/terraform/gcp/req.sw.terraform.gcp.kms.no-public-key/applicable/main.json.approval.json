@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public access to KMS keys was detected", "Evidence": ["                    \"members\": [\"user:example@example.com\", \"allAuthenticatedUsers\"]\n"]}

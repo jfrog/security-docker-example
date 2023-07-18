@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.QuantizeAndDequantize is never called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV2 is never called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV3 is never called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV4 is never called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV4Grad is never called",
+    "Evidence": []
+}

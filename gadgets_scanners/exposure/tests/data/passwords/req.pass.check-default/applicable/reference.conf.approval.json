@@ -1,0 +1,11 @@
+{
+    "Answer": true,
+    "Verdict": "Default passwords were found",
+    "Evidence": [
+        "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-trust-store-password = \"changeme\"",
+        "key-password = \"local123\"",
+        "key-password = \"password\"",
+        "key-store-password = \"12345\"",
+        "trust-store-password = \"local\""
+    ]
+}

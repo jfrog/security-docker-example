@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable functions QuerySet.annotate(), .aggregate(), .extra() are not called with a non-constant argument", "Evidence": []}

@@ -1,0 +1,160 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 118,
+  "lineage": "6a0fca1e-fbca-b068-6177-3fd2c7516682",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_cosmosdb_account",
+      "name": "db",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access_key_metadata_writes_enabled": true,
+            "analytical_storage": [
+              {
+                "schema_type": "FullFidelity"
+              }
+            ],
+            "analytical_storage_enabled": false,
+            "backup": [
+              {
+                "interval_in_minutes": 240,
+                "retention_in_hours": 8,
+                "storage_redundancy": "Geo",
+                "type": "Periodic"
+              }
+            ],
+            "capabilities": [
+              {
+                "name": "EnableAggregationPipeline"
+              },
+              {
+                "name": "EnableMongo"
+              },
+              {
+                "name": "MongoDBv3.4"
+              },
+              {
+                "name": "mongoEnableDocLevelTTL"
+              }
+            ],
+            "capacity": [],
+            "connection_strings": [
+              "mongodb://tfex-cosmos-db-99542:mnbVOK1ZyASVOMuPkEUFc1qIb11rJYSVo1KytX0t1GpV1ariYSEfdK22GV9Hg9tTL25tJr7l63vp0P3tp2QbSw==@tfex-cosmos-db-99542.mongo.cosmos.azure.com:10255/?ssl=true\u0026replicaSet=globaldb\u0026retrywrites=false\u0026maxIdleTimeMS=120000\u0026appName=@tfex-cosmos-db-99542@",
+              "mongodb://tfex-cosmos-db-99542:nOO6nK2WKwwVHMn27yfxR2H3OCWA2eFtgpKUKMdrG5jSFvejN2g8ftYzeUfAgIhjPlGRQVHkUD03ifp40z5VSg==@tfex-cosmos-db-99542.mongo.cosmos.azure.com:10255/?ssl=true\u0026replicaSet=globaldb\u0026retrywrites=false\u0026maxIdleTimeMS=120000\u0026appName=@tfex-cosmos-db-99542@",
+              "mongodb://tfex-cosmos-db-99542:XwHF4Q5SnWnDaxRqwvEs0G9ggFCjbzCU1tsxQiiCohuaWWjgjjQOxyFYdwQgb8ITOjcyH6OoRc6CXoFHUVudCA==@tfex-cosmos-db-99542.mongo.cosmos.azure.com:10255/?ssl=true\u0026replicaSet=globaldb\u0026retrywrites=false\u0026maxIdleTimeMS=120000\u0026appName=@tfex-cosmos-db-99542@",
+              "mongodb://tfex-cosmos-db-99542:7oYBtq3NXgXZojJFZfMY5HROdykwe5xhUSuNphLxYccRDYdy2bgOQJiydG6d6mQQYwYYdDjdu3WYhtlNVc9dmw==@tfex-cosmos-db-99542.mongo.cosmos.azure.com:10255/?ssl=true\u0026replicaSet=globaldb\u0026retrywrites=false\u0026maxIdleTimeMS=120000\u0026appName=@tfex-cosmos-db-99542@"
+            ],
+            "consistency_policy": [
+              {
+                "consistency_level": "BoundedStaleness",
+                "max_interval_in_seconds": 300,
+                "max_staleness_prefix": 100000
+              }
+            ],
+            "cors_rule": [],
+            "create_mode": "",
+            "default_identity_type": "FirstPartyIdentity",
+            "enable_automatic_failover": true,
+            "enable_free_tier": false,
+            "enable_multiple_write_locations": false,
+            "endpoint": "https://tfex-cosmos-db-99542.documents.azure.com:443/",
+            "geo_location": [
+              {
+                "failover_priority": 0,
+                "id": "tfex-cosmos-db-99542-eastus",
+                "location": "eastus",
+                "prefix": "",
+                "zone_redundant": false
+              }
+            ],
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resource-group/providers/Microsoft.DocumentDB/databaseAccounts/tfex-cosmos-db-99542",
+            "identity": [],
+            "ip_range_filter": "",
+            "is_virtual_network_filter_enabled": false,
+            "key_vault_key_id": null,
+            "kind": "MongoDB",
+            "local_authentication_disabled": false,
+            "location": "westeurope",
+            "mongo_server_version": "3.6",
+            "name": "tfex-cosmos-db-99542",
+            "network_acl_bypass_for_azure_services": false,
+            "network_acl_bypass_ids": null,
+            "offer_type": "Standard",
+            "primary_key": "mnbVOK1ZyASVOMuPkEUFc1qIb11rJYSVo1KytX0t1GpV1ariYSEfdK22GV9Hg9tTL25tJr7l63vp0P3tp2QbSw==",
+            "primary_master_key": "mnbVOK1ZyASVOMuPkEUFc1qIb11rJYSVo1KytX0t1GpV1ariYSEfdK22GV9Hg9tTL25tJr7l63vp0P3tp2QbSw==",
+            "primary_readonly_key": "XwHF4Q5SnWnDaxRqwvEs0G9ggFCjbzCU1tsxQiiCohuaWWjgjjQOxyFYdwQgb8ITOjcyH6OoRc6CXoFHUVudCA==",
+            "primary_readonly_master_key": "XwHF4Q5SnWnDaxRqwvEs0G9ggFCjbzCU1tsxQiiCohuaWWjgjjQOxyFYdwQgb8ITOjcyH6OoRc6CXoFHUVudCA==",
+            "public_network_access_enabled": false,
+            "read_endpoints": [
+              "https://tfex-cosmos-db-99542-eastus.documents.azure.com:443/"
+            ],
+            "resource_group_name": "example-resource-group",
+            "restore": [],
+            "secondary_key": "nOO6nK2WKwwVHMn27yfxR2H3OCWA2eFtgpKUKMdrG5jSFvejN2g8ftYzeUfAgIhjPlGRQVHkUD03ifp40z5VSg==",
+            "secondary_master_key": "nOO6nK2WKwwVHMn27yfxR2H3OCWA2eFtgpKUKMdrG5jSFvejN2g8ftYzeUfAgIhjPlGRQVHkUD03ifp40z5VSg==",
+            "secondary_readonly_key": "7oYBtq3NXgXZojJFZfMY5HROdykwe5xhUSuNphLxYccRDYdy2bgOQJiydG6d6mQQYwYYdDjdu3WYhtlNVc9dmw==",
+            "secondary_readonly_master_key": "7oYBtq3NXgXZojJFZfMY5HROdykwe5xhUSuNphLxYccRDYdy2bgOQJiydG6d6mQQYwYYdDjdu3WYhtlNVc9dmw==",
+            "tags": null,
+            "timeouts": null,
+            "virtual_network_rule": [],
+            "write_endpoints": [
+              "https://tfex-cosmos-db-99542-eastus.documents.azure.com:443/"
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMDgwMDAwMDAwMDAwMCwiZGVsZXRlIjoxMDgwMDAwMDAwMDAwMCwicmVhZCI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjEwODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example",
+            "random_integer.ri"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resource-group",
+            "location": "westeurope",
+            "name": "example-resource-group",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "random_integer",
+      "name": "ri",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "99542",
+            "keepers": null,
+            "max": 99999,
+            "min": 10000,
+            "result": 99542,
+            "seed": null
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ]
+}

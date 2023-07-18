@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function tensorflow.io.decode_png is called", "Evidence": ["tf.io.decode_png(contents=input())", "tf.io.decode_png(input())"]}

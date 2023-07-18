@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function QuerySet.explain is called with a non-constant argument", "Evidence": ["Blog.objects.filter(title='My Blog').explain(my_flag=my_flag)", "QuerySet.explain(my_flag=my_flag)"]}

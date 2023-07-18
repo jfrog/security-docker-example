@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.TensorArrayConcatV2 is called",
+    "Evidence": [
+        "tf.raw_ops.TensorArrayConcatV2(handle=['a', 'b'], flow_in = 0.1, dtype=tf.int32, element_shape_except0=1)"
+    ]
+}

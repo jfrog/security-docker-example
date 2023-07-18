@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function ZipFile.extractall is called",
+    "Evidence": [
+        "zipObj.extractall()"
+    ]
+}

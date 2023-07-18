@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache web server is not configured to use TLS for all communication", "Evidence": ["    SSLEngine off\n"]}

@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "Insecure uses admin socket address was detected",
+    "Evidence": [
+        "      address: 0.0.0.0\n"
+    ]
+}

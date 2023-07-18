@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function numpy.load is called with pickle deserialization enabled", "Evidence": ["numpy.load('test.npy', allow_pickle=True)"]}

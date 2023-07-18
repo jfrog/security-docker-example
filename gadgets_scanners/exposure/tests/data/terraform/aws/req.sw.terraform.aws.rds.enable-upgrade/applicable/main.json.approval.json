@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "auto_minor_version_upgrade=False was detected", "Evidence": ["            \"auto_minor_version_upgrade\": false,\n"]}

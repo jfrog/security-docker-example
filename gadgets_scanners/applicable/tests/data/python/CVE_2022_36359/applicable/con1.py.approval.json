@@ -1,0 +1,35 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable class django.http.FileResponse is instantiated with the attribute as_attachment set to True, The vulnerable class django.http.FileResponse is instantiated with external input as the filename argument",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2022_36359/applicable/con1.py",
+                            "FileResponse(pdf, as_attachment=True, filename=filename)",
+                            "27",
+                            "The vulnerable class django.http.FileResponse is instantiated with the attribute as_attachment set to True"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2022_36359/applicable/con1.py",
+                            "FileResponse(pdf, as_attachment=True, filename=filename)",
+                            "27",
+                            "The vulnerable class django.http.FileResponse is instantiated with external input as the filename argument"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

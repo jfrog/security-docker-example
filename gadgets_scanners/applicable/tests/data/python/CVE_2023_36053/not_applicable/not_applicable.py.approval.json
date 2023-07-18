@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function django.forms.EmailField is never called, The vulnerable function django.forms.URLField is never called",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

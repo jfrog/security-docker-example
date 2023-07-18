@@ -1,0 +1,73 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 3,
+  "lineage": "2c7f97a6-a683-42c6-773e-c6edd4057ec3",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "b",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "public-read",
+            "arn": "arn:aws:s3:::swebsite",
+            "bucket": "swebsite",
+            "bucket_domain_name": "swebsite.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "swebsite.s3.us-west-2.amazonaws.com",
+            "cors_rule": [
+              {
+                "allowed_headers": [
+                  "*"
+                ],
+                "allowed_methods": [
+                  "PUT",
+                  "POST"
+                ],
+                "allowed_origins": [
+                  "https://s3-website-test.hashicorp.com"
+                ],
+                "expose_headers": [
+                  "ETag"
+                ],
+                "max_age_seconds": 3000
+              }
+            ],
+            "force_destroy": false,
+            "grant": [],
+            "hosted_zone_id": "Z3BJ6K6RIION7M",
+            "id": "swebsite",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "object_lock_enabled": false,
+            "policy": null,
+            "region": "us-west-2",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "tags_all": {},
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

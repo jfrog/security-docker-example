@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable class raw_ops.SparseCountSparseOutput is never instantiated", "Evidence": []}

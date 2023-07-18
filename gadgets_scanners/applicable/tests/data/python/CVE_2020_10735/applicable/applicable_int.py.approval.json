@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "At least one of the vulnerable functions int/str is called with external input",
+    "Evidence": [
+        "int(sys.argv[1])"
+    ]
+}

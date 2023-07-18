@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "storage_encrypted=False was detected", "Evidence": ["            \"storage_encrypted\": false,\n"]}

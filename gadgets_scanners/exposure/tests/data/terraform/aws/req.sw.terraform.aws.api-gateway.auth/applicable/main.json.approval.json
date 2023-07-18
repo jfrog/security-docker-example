@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "authorization=NONE was detected", "Evidence": ["            \"authorization\": \"NONE\",\n"]}

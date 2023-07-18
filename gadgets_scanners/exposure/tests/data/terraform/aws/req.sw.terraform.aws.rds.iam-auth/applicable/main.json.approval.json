@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "iam_database_authentication_enabled=False was detected", "Evidence": ["            \"iam_database_authentication_enabled\": false,\n"]}

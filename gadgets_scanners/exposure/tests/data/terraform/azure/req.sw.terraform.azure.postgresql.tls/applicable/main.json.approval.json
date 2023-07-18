@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Missing TLS was detected", "Evidence": ["            \"ssl_enforcement_enabled\": false,\n"]}

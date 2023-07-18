@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "transport_socket was not detected",
+    "Evidence": [
+        "          {\n"
+    ]
+}

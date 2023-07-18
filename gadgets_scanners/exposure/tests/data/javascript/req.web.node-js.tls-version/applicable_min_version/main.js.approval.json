@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "https.createServer is used with TLSv1", "Evidence": ["{\n    key: fs.readFileSync(\"server.key\"),\n    cert: fs.readFileSync(\"server.cert\"),\n    minVersion: tlsVersion\n}"]}

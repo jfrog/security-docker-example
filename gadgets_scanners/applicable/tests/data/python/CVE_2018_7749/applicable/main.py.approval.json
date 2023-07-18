@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable class asyncssh.SSHServer is inherited", "Evidence": ["class MySSHServer(SSHServer):\n    pass"]}

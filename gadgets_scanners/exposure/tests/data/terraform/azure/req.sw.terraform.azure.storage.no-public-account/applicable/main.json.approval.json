@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public access level for storage containers and blobs was detected", "Evidence": ["            \"allow_blob_public_access\": true\n"]}

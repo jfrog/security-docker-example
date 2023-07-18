@@ -1,0 +1,27 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_storage_account",
+      "name": "MyDemoMethod",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "name": "storageaccountname",
+            "enable_https_traffic_only": false,
+            "account_tier": "Standard"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

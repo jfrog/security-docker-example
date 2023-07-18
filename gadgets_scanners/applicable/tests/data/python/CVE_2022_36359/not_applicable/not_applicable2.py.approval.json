@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable class django.http.FileResponse is never instantiated with external input as the filename argument, The vulnerable class django.http.FileResponse is never instantiated with external input as the *args argument when filename argument is not provided, The vulnerable function django.http.FileResponse.set_headers is never called with external input when filename argument is not provided in django.http.FileResponse instantiation",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

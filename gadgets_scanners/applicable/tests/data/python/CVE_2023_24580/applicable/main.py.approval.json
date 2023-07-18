@@ -1,0 +1,10 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable Django MultiPartParser class is instantiated",
+    "Evidence": [
+        "MultiPartParser",
+        "MultiPartParser(META, post_data, self.upload_handlers, self.encoding)",
+        "parser",
+        "parser"
+    ]
+}

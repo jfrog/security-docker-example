@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential pty.spawn invocation was detected", "Evidence": ["pty.spawn(\"/bin/sh\")"]}

@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable functions tarfile.TarFile.extractall/tarfile.TarInfo.extract are never called with external input",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

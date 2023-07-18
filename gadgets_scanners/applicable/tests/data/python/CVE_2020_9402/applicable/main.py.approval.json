@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable Django GIS module is used", "Evidence": ["from django.contrib import gis"]}

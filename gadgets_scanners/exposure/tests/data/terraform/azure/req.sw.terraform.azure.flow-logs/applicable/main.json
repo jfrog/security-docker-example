@@ -1,0 +1,300 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 73,
+  "lineage": "6a0fca1e-fbca-b068-6177-3fd2c7516682",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_log_analytics_workspace",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "daily_quota_gb": -1,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.OperationalInsights/workspaces/acctestlaw",
+            "internet_ingestion_enabled": true,
+            "internet_query_enabled": true,
+            "location": "westeurope",
+            "name": "acctestlaw",
+            "portal_url": "",
+            "primary_shared_key": "qmqut0POYlE9ilLqvCjPLYLGV86FrNz6KuYmAXEERjZ8H0fNG1CAON975m6VTs3nbnLkhOBPt3Mq/94uy9SN2Q==",
+            "reservation_capacity_in_gb_per_day": null,
+            "reservation_capcity_in_gb_per_day": null,
+            "resource_group_name": "example-resources",
+            "retention_in_days": 30,
+            "secondary_shared_key": "9MdmPUiWTQEvxRXs+Wdujx1Jrr8cUpKIwc2SzxBrWejFX2hqk596AcUwvL0TCcKERBhJUzXoCwLw/uCzr80ijw==",
+            "sku": "PerGB2018",
+            "tags": {},
+            "timeouts": null,
+            "workspace_id": "80637572-4cbe-4ed2-a49b-30720c8a4b5b"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_security_group",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Network/networkSecurityGroups/acctestnsg",
+            "location": "westeurope",
+            "name": "acctestnsg",
+            "resource_group_name": "example-resources",
+            "security_rule": [],
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_watcher",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Network/networkWatchers/acctestnw",
+            "location": "westeurope",
+            "name": "acctestnw",
+            "resource_group_name": "example-resources",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_network_watcher_flow_log",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "enabled": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Network/networkWatchers/acctestnw/flowLogs/example-log",
+            "location": "westeurope",
+            "name": "example-log",
+            "network_security_group_id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Network/networkSecurityGroups/acctestnsg",
+            "network_watcher_name": "acctestnw",
+            "resource_group_name": "example-resources",
+            "retention_policy": [
+              {
+                "days": 7,
+                "enabled": true
+              }
+            ],
+            "storage_account_id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Storage/storageAccounts/acctestsa23124",
+            "tags": null,
+            "timeouts": null,
+            "traffic_analytics": [
+              {
+                "enabled": true,
+                "interval_in_minutes": 10,
+                "workspace_id": "80637572-4cbe-4ed2-a49b-30720c8a4b5b",
+                "workspace_region": "westeurope",
+                "workspace_resource_id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.OperationalInsights/workspaces/acctestlaw"
+              }
+            ],
+            "version": 1
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0=",
+          "dependencies": [
+            "azurerm_log_analytics_workspace.test",
+            "azurerm_network_security_group.test",
+            "azurerm_network_watcher.test",
+            "azurerm_resource_group.example",
+            "azurerm_storage_account.test"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources",
+            "location": "westeurope",
+            "name": "example-resources",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_storage_account",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "access_tier": "Hot",
+            "account_kind": "StorageV2",
+            "account_replication_type": "LRS",
+            "account_tier": "Standard",
+            "allow_blob_public_access": false,
+            "azure_files_authentication": [],
+            "blob_properties": [
+              {
+                "change_feed_enabled": false,
+                "container_delete_retention_policy": [],
+                "cors_rule": [],
+                "default_service_version": "",
+                "delete_retention_policy": [],
+                "last_access_time_enabled": false,
+                "versioning_enabled": false
+              }
+            ],
+            "custom_domain": [],
+            "customer_managed_key": [],
+            "enable_https_traffic_only": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Storage/storageAccounts/acctestsa23124",
+            "identity": [],
+            "infrastructure_encryption_enabled": false,
+            "is_hns_enabled": false,
+            "large_file_share_enabled": null,
+            "location": "westeurope",
+            "min_tls_version": "TLS1_0",
+            "name": "acctestsa23124",
+            "network_rules": [
+              {
+                "bypass": [
+                  "AzureServices"
+                ],
+                "default_action": "Allow",
+                "ip_rules": [],
+                "private_link_access": [],
+                "virtual_network_subnet_ids": []
+              }
+            ],
+            "nfsv3_enabled": false,
+            "primary_access_key": "TsTzKACIlkHCeV4F5/osagJDvs4EEXE3s+X5fsq3k354I4dP8y6VJpWKjEkqHyWJe/SMltB7yGAh+ASt3kl8iA==",
+            "primary_blob_connection_string": "DefaultEndpointsProtocol=https;BlobEndpoint=https://acctestsa23124.blob.core.windows.net/;AccountName=acctestsa23124;AccountKey=TsTzKACIlkHCeV4F5/osagJDvs4EEXE3s+X5fsq3k354I4dP8y6VJpWKjEkqHyWJe/SMltB7yGAh+ASt3kl8iA==",
+            "primary_blob_endpoint": "https://acctestsa23124.blob.core.windows.net/",
+            "primary_blob_host": "acctestsa23124.blob.core.windows.net",
+            "primary_connection_string": "DefaultEndpointsProtocol=https;AccountName=acctestsa23124;AccountKey=TsTzKACIlkHCeV4F5/osagJDvs4EEXE3s+X5fsq3k354I4dP8y6VJpWKjEkqHyWJe/SMltB7yGAh+ASt3kl8iA==;EndpointSuffix=core.windows.net",
+            "primary_dfs_endpoint": "https://acctestsa23124.dfs.core.windows.net/",
+            "primary_dfs_host": "acctestsa23124.dfs.core.windows.net",
+            "primary_file_endpoint": "https://acctestsa23124.file.core.windows.net/",
+            "primary_file_host": "acctestsa23124.file.core.windows.net",
+            "primary_location": "westeurope",
+            "primary_queue_endpoint": "https://acctestsa23124.queue.core.windows.net/",
+            "primary_queue_host": "acctestsa23124.queue.core.windows.net",
+            "primary_table_endpoint": "https://acctestsa23124.table.core.windows.net/",
+            "primary_table_host": "acctestsa23124.table.core.windows.net",
+            "primary_web_endpoint": "https://acctestsa23124.z6.web.core.windows.net/",
+            "primary_web_host": "acctestsa23124.z6.web.core.windows.net",
+            "queue_encryption_key_type": "Service",
+            "queue_properties": [
+              {
+                "cors_rule": [],
+                "hour_metrics": [
+                  {
+                    "enabled": true,
+                    "include_apis": true,
+                    "retention_policy_days": 7,
+                    "version": "1.0"
+                  }
+                ],
+                "logging": [
+                  {
+                    "delete": false,
+                    "read": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0",
+                    "write": false
+                  }
+                ],
+                "minute_metrics": [
+                  {
+                    "enabled": false,
+                    "include_apis": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0"
+                  }
+                ]
+              }
+            ],
+            "resource_group_name": "example-resources",
+            "routing": [],
+            "secondary_access_key": "fWNfCZOH+3eoVE5RcgVuyMoeibzDUA1t3QxhUpAAZqynONz4VrfyY8qMas/9seHeZA0msK+3+nMp+AStCDKadA==",
+            "secondary_blob_connection_string": "",
+            "secondary_blob_endpoint": null,
+            "secondary_blob_host": null,
+            "secondary_connection_string": "DefaultEndpointsProtocol=https;AccountName=acctestsa23124;AccountKey=fWNfCZOH+3eoVE5RcgVuyMoeibzDUA1t3QxhUpAAZqynONz4VrfyY8qMas/9seHeZA0msK+3+nMp+AStCDKadA==;EndpointSuffix=core.windows.net",
+            "secondary_dfs_endpoint": null,
+            "secondary_dfs_host": null,
+            "secondary_file_endpoint": null,
+            "secondary_file_host": null,
+            "secondary_location": "",
+            "secondary_queue_endpoint": null,
+            "secondary_queue_host": null,
+            "secondary_table_endpoint": null,
+            "secondary_table_host": null,
+            "secondary_web_endpoint": null,
+            "secondary_web_host": null,
+            "share_properties": [
+              {
+                "cors_rule": [],
+                "retention_policy": [
+                  {
+                    "days": 7
+                  }
+                ],
+                "smb": []
+              }
+            ],
+            "shared_access_key_enabled": true,
+            "static_website": [],
+            "table_encryption_key_type": "Service",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    }
+  ]
+}

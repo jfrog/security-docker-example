@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "encryption_type=None was detected", "Evidence": ["            \"encryption_type\": \"NONE\",\n"]}

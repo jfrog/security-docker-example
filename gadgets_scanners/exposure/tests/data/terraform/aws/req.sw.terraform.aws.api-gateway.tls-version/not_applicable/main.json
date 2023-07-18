@@ -1,0 +1,44 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 5,
+  "lineage": "96fafd8a-748d-3493-2f50-81a29d61c123",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_domain_name",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:apigateway:us-west-2::/domainnames/api.example.com",
+            "certificate_arn": "",
+            "certificate_body": null,
+            "certificate_chain": null,
+            "certificate_name": "",
+            "certificate_private_key": null,
+            "certificate_upload_date": "2022-07-10T13:26:22Z",
+            "cloudfront_domain_name": "dow7oay13rw.cloudfront.net",
+            "cloudfront_zone_id": "Z2FDTNDATAQYW2",
+            "domain_name": "api.example.com",
+            "endpoint_configuration": [],
+            "id": "api.example.com",
+            "mutual_tls_authentication": [],
+            "regional_certificate_arn": "",
+            "regional_certificate_name": "",
+            "regional_domain_name": "d-owt4de3cai.execute-api.us-west-2.amazonaws.com",
+            "regional_zone_id": "Z2FDTNDATAQYW2",
+            "security_policy": "TLS_1_2",
+            "tags": {},
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

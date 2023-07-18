@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential shell injection was detected", "Evidence": ["os.system('nslookup {}'.format(domain))"]}

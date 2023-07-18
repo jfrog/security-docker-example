@@ -1,0 +1,11 @@
+{
+    "Answer": true,
+    "Verdict": "Default passwords were found",
+    "Evidence": [
+        "realm-pass=\"local\"",
+        "realm-passphrase=\"local\"",
+        "realm-password=\"123456\"",
+        "realm-psk=\"local\"",
+        "realm-pw=\"local\""
+    ]
+}

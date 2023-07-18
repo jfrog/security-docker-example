@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function urllib.parse.parse_qs/parse_qsl is called", "Evidence": ["parse_qs(get_user_input())", "parse_qsl(get_user_input())"]}

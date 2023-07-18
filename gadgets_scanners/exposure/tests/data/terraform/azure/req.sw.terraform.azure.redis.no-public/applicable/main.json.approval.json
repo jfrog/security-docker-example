@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "start_ip=0.0.0.0 was detected, end_ip=0.0.0.0 was detected", "Evidence": ["            \"end_ip\": \"0.0.0.0\"\n", "            \"start_ip\": \"0.0.0.0\",\n"]}

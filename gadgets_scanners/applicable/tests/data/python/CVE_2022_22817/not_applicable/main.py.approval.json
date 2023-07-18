@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable function Pillow.ImageMath.eval is never called with a non-constant argument", "Evidence": []}

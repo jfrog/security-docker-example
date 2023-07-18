@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "kms_key_id='' was detected", "Evidence": ["            \"kms_key_id\": \"\"\n"]}

@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential shell injection was detected", "Evidence": ["subprocess.run('nslookup {}'.format(domain), shell=True)"]}

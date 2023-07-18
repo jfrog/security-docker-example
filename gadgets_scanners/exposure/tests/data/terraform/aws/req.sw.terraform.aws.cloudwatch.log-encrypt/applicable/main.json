@@ -1,0 +1,38 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 11,
+  "lineage": "8f4e6592-36bb-d47f-cb5b-ede571571091",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_cloudwatch_log_group",
+      "name": "yada",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:logs:us-west-2:000000000000:log-group:Yada",
+            "id": "Yada",
+            "kms_key_id": "",
+            "name": "Yada",
+            "name_prefix": null,
+            "retention_in_days": 0,
+            "tags": {
+              "Application": "serviceA",
+              "Environment": "production"
+            },
+            "tags_all": {
+              "Application": "serviceA",
+              "Environment": "production"
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

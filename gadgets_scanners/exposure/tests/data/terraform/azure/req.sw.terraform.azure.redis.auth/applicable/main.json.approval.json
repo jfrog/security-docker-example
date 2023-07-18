@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "No authentication for redis cache was detected", "Evidence": ["            \"enable_authentication\": false\n"]}

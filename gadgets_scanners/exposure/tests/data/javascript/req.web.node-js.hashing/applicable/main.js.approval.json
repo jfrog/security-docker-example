@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential default crypto library use detected", "Evidence": ["crypto.createHmac('sha256', secret)"]}

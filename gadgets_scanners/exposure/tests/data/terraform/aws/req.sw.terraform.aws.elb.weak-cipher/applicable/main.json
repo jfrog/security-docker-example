@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_load_balancer_policy",
+      "name": "MyDemoMethod",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "policy_attribute": [
+              {
+                "name": "TLS_RSA_WITH_DES_CBC_SHA"
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_resource.MyDemoResource",
+            "aws_api_gateway_rest_api.MyDemoAPI"
+          ]
+        }
+      ]
+    }
+  ]
+}

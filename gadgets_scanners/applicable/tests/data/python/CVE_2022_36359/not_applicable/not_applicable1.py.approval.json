@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable class django.http.FileResponse is never instantiated with the attribute as_attachment set to True",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

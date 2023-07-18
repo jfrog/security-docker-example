@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Option \"Content Security Policy\" is not properly set in nginx configuration", "Evidence": ["  server { # php/fastcgi\n", "  server { # simple load balancing\n", "  server { # simple reverse-proxy\n", "http {\n"]}

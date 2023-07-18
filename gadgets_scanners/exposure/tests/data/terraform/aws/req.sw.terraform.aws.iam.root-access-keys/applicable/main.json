@@ -1,0 +1,61 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 15,
+  "lineage": "89814a89-8d5d-5234-6b19-d2f34cf9aa08",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_iam_access_key",
+      "name": "lb",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "create_date": "2022-05-08T08:25:27Z",
+            "encrypted_secret": null,
+            "encrypted_ses_smtp_password_v4": null,
+            "id": "AKIAS5Z4OP53YQ4SHAN7",
+            "key_fingerprint": null,
+            "pgp_key": null,
+            "secret": "LLOYV3Qq8M69A4VXtk5xm/2XLirpS/+cX95/HnZp",
+            "ses_smtp_password_v4": "BDXwDvSdUBFPjj2166zD47OqTf1lxaiVlH6+QxPGFVbP",
+            "status": "Active",
+            "user": "root"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_iam_user.lb"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_iam_user",
+      "name": "lb",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:iam::000000000000:user/system/root",
+            "force_destroy": false,
+            "id": "root",
+            "name": "root",
+            "path": "/system/",
+            "permissions_boundary": null,
+            "tags": {},
+            "tags_all": {},
+            "unique_id": "chvh08v4ghptvxx4ov61"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

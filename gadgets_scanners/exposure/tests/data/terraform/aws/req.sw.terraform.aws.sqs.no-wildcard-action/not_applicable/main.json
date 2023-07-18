@@ -1,0 +1,67 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 8,
+  "lineage": "9951d80a-64b3-7955-9619-4cc3ad32362c",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_sqs_queue",
+      "name": "q",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:sqs:us-west-2:000000000000:examplequeue",
+            "content_based_deduplication": false,
+            "deduplication_scope": "",
+            "delay_seconds": 0,
+            "fifo_queue": false,
+            "fifo_throughput_limit": "",
+            "id": "http://localhost:4566/000000000000/examplequeue",
+            "kms_data_key_reuse_period_seconds": 300,
+            "kms_master_key_id": "",
+            "max_message_size": 262144,
+            "message_retention_seconds": 345600,
+            "name": "examplequeue",
+            "name_prefix": "",
+            "policy": "",
+            "receive_wait_time_seconds": 0,
+            "redrive_allow_policy": "",
+            "redrive_policy": "",
+            "sqs_managed_sse_enabled": false,
+            "tags": {},
+            "tags_all": {},
+            "url": "http://localhost:4566/000000000000/examplequeue",
+            "visibility_timeout_seconds": 30
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_sqs_queue_policy",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "id": "http://localhost:4566/000000000000/examplequeue",
+            "policy": "{\"Id\":\"sqspolicy\",\"Statement\":[{\"Action\":\"sqs:SendMessage\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Resource\":\"arn:aws:sqs:us-west-2:000000000000:examplequeue\",\"Sid\":\"First\"}],\"Version\":\"2012-10-17\"}",
+            "queue_url": "http://localhost:4566/000000000000/examplequeue"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ==",
+          "dependencies": [
+            "aws_sqs_queue.q"
+          ]
+        }
+      ]
+    }
+  ]
+}

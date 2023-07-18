@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://git.vdoo.io/vdoo/analyzers/-/blob/4672f58c841f1ebd42ab5fa30eb85be450ace9bf/applicable/tests/data/cve/cve_2021_3737/cve_2021_3737_applicable/unpacked/filesystem/container/app/vuln.py
+HostUrl=https://git.vdoo.io/vdoo/analyzers/-/raw/4672f58c841f1ebd42ab5fa30eb85be450ace9bf/applicable/tests/data/cve/cve_2021_3737/cve_2021_3737_applicable/unpacked/filesystem/container/app/vuln.py?inline=false

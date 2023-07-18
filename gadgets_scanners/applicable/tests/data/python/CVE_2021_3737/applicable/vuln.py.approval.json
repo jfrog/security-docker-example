@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function request.urlopen is called", "Evidence": ["urllib.request.urlopen(req, timeout=1)"]}

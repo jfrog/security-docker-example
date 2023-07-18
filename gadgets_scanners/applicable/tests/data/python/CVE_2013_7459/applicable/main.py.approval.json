@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable class Cipher.AES is used", "Evidence": ["AES.new(key, AES.MODE_EAX)"]}

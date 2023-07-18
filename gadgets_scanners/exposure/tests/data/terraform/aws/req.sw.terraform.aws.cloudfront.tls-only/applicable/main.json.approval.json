@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "viewer_protocol_policy='allow-all' was detected", "Evidence": ["                \"viewer_protocol_policy\": \"allow-all\"\n"]}

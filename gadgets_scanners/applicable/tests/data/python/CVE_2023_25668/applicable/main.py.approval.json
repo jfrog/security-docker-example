@@ -1,0 +1,11 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.QuantizeAndDequantize is called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV2 is called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV3 is called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV4 is called, The vulnerable function tensorflow.raw_ops.QuantizeAndDequantizeV4Grad is called",
+    "Evidence": [
+        "f1()",
+        "f2()",
+        "f3()",
+        "f4()",
+        "f5()"
+    ]
+}

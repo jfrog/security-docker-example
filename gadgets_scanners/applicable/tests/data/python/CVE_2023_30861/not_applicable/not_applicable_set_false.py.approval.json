@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable class flask.session is never instantiated with the attribute permanent set to True",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

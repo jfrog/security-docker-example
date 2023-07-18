@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Basic authentication was detected", "Evidence": ["                \"password\": \"P@ssw0rd\"\n", "                \"username\": \"user\",\n"]}

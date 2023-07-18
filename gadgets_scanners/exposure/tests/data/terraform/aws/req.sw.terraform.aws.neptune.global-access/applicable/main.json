@@ -1,0 +1,142 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 4,
+  "lineage": "848e9b2e-72e6-d119-0fd1-293940c5155e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_neptune_cluster",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "apply_immediately": true,
+            "arn": "arn:aws:rds:us-west-2:000000000000:cluster:neptune-cluster-demo",
+            "availability_zones": [],
+            "backup_retention_period": 5,
+            "cluster_identifier": "neptune-cluster-demo",
+            "cluster_identifier_prefix": null,
+            "cluster_members": [],
+            "cluster_resource_id": "",
+            "copy_tags_to_snapshot": false,
+            "deletion_protection": false,
+            "enable_cloudwatch_logs_exports": null,
+            "endpoint": "localhost:4510",
+            "engine": "neptune",
+            "engine_version": "",
+            "final_snapshot_identifier": null,
+            "hosted_zone_id": "",
+            "iam_database_authentication_enabled": false,
+            "iam_roles": null,
+            "id": "neptune-cluster-demo",
+            "kms_key_arn": "",
+            "neptune_cluster_parameter_group_name": "default.neptune1",
+            "neptune_subnet_group_name": "",
+            "port": 4510,
+            "preferred_backup_window": "07:00-09:00",
+            "preferred_maintenance_window": "",
+            "reader_endpoint": "",
+            "replication_source_identifier": "",
+            "skip_final_snapshot": true,
+            "snapshot_identifier": null,
+            "storage_encrypted": false,
+            "tags": null,
+            "tags_all": {},
+            "timeouts": null,
+            "vpc_security_group_ids": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo3MjAwMDAwMDAwMDAwLCJkZWxldGUiOjcyMDAwMDAwMDAwMDAsInVwZGF0ZSI6NzIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_neptune_cluster_instance",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "address": "tf-20220607080110543700000001.aaaaaaaaaa.us-west-2.rds.amazonaws.com",
+            "apply_immediately": true,
+            "arn": "arn:aws:rds:us-west-2:000000000000:db:tf-20220607080110543700000001",
+            "auto_minor_version_upgrade": true,
+            "availability_zone": "",
+            "cluster_identifier": "neptune-cluster-demo",
+            "dbi_resource_id": "db-M5ENSHXFPU6XHZ4G4ZEI5QIO2U",
+            "endpoint": "tf-20220607080110543700000001.aaaaaaaaaa.us-west-2.rds.amazonaws.com:4512",
+            "engine": "neptune",
+            "engine_version": "None",
+            "id": "tf-20220607080110543700000001",
+            "identifier": "tf-20220607080110543700000001",
+            "identifier_prefix": null,
+            "instance_class": "db.r4.large",
+            "kms_key_arn": "",
+            "neptune_parameter_group_name": "None",
+            "neptune_subnet_group_name": null,
+            "port": 4512,
+            "preferred_backup_window": "03:50-04:20",
+            "preferred_maintenance_window": "wed:06:38-wed:07:08",
+            "promotion_tier": 0,
+            "publicly_accessible": true,
+            "storage_encrypted": false,
+            "tags": null,
+            "tags_all": {},
+            "timeouts": null,
+            "writer": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInVwZGF0ZSI6NTQwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_neptune_cluster.default"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "address": "tf-20220607080110543900000002.aaaaaaaaaa.us-west-2.rds.amazonaws.com",
+            "apply_immediately": true,
+            "arn": "arn:aws:rds:us-west-2:000000000000:db:tf-20220607080110543900000002",
+            "auto_minor_version_upgrade": true,
+            "availability_zone": "",
+            "cluster_identifier": "neptune-cluster-demo",
+            "dbi_resource_id": "db-M5ENSHXFPU6XHZ4G4ZEI5QIO2U",
+            "endpoint": "tf-20220607080110543900000002.aaaaaaaaaa.us-west-2.rds.amazonaws.com:4511",
+            "engine": "neptune",
+            "engine_version": "None",
+            "id": "tf-20220607080110543900000002",
+            "identifier": "tf-20220607080110543900000002",
+            "identifier_prefix": null,
+            "instance_class": "db.r4.large",
+            "kms_key_arn": "",
+            "neptune_parameter_group_name": "None",
+            "neptune_subnet_group_name": null,
+            "port": 4511,
+            "preferred_backup_window": "03:50-04:20",
+            "preferred_maintenance_window": "wed:06:38-wed:07:08",
+            "promotion_tier": 0,
+            "publicly_accessible": true,
+            "storage_encrypted": false,
+            "tags": null,
+            "tags_all": {},
+            "timeouts": null,
+            "writer": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInVwZGF0ZSI6NTQwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "aws_neptune_cluster.default"
+          ]
+        }
+      ]
+    }
+  ]
+}

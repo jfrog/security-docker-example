@@ -1,0 +1,13 @@
+ecopower 1.3
+zlibsrc 1.1
+PyYAML 5.2
+asyncssh 1.1.1
+cryptoasset-data-downloader 1.0.0
+urllib3 1.1
+tornado 3.2.0b1
+paramiko 1.17.6
+pillow 5.2.0
+django 3.2
+ujson 1.34
+tensorflow 2.8.0
+Flask 0.10

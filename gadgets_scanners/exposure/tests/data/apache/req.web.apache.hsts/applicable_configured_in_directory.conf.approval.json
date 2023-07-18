@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache is not configured properly for the \"Strict Transport Security\" setting", "Evidence": ["        <FilesMatch \"^\\.ht\">\n", "<VirtualHost *:80>\n"]}

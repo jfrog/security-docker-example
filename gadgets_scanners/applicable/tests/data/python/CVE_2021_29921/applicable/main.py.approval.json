@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function ipaddress.ip_address is called with a non-constant argument", "Evidence": ["ip_address(get_user_input())"]}

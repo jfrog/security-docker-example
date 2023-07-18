@@ -1,0 +1,30 @@
+{
+  "static_resources": {
+    "listeners": [
+      {
+        "filter_chains": [
+          {
+            "transport_socket": {
+              "typed_config": {
+                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.DownstreamTlsContext"
+              }
+            }
+          },
+          {
+            "transport_socket": {
+              "typed_config": {
+                "@type": "type.googleapis.com/envoy.extensions.transport_sockets.tls.v3.UpstreamTlsContext",
+                "common_tls_context": {
+                  "validation_context": {}
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "clusters": [
+      {"transport_socket": {"typed_config": {}}}
+    ]
+  }
+}

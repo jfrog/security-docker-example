@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function tensorflow.io.decode_gif is never called",
+    "Evidence": []
+}

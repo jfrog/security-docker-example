@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Weak algorithms for DNSSEC was detected", "Evidence": ["                    \"algorithm\": \"rsasha1\"\n"]}

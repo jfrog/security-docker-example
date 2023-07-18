@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function tarfile.open is called with external input", "Evidence": ["_.open(Unknown)", "tarfile.open(Unknown)", "tarfile.open(mode=\"r\", name=Unknown)", "tarfile.open(mode=Unknown, name=Unknown)"]}

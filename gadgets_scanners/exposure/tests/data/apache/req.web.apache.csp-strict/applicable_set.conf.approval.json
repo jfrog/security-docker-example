@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache is not properly configured for the \"Content-Security-Policy\" setting", "Evidence": ["header set Content-Security-Policy \"script-src 'self'\""]}

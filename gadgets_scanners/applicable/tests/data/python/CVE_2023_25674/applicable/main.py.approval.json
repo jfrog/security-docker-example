@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.RandomShuffle is called",
+    "Evidence": [
+        "func()"
+    ]
+}

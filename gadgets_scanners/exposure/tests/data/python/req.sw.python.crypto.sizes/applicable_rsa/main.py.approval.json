@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential use of weak cryptographic key size was detected", "Evidence": ["1024"]}

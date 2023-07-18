@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.Print is called",
+    "Evidence": [
+        "tf.raw_ops.Print(input =  tf.constant([1, 1, 1, 1],dtype=tf.int32),\n                            data =  [[False, False, False, False], [False], [False, False, False]],\n                            message =  'tmp/I',\n                            first_n = 100,\n                            summarize = 0)"
+    ]
+}

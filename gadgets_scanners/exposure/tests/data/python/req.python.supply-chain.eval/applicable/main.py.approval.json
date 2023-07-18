@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential malicious eval invocation was detected", "Evidence": ["eval(some_value)"]}

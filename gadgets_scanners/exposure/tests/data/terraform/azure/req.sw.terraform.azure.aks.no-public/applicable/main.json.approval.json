@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Allow public access to Kubernetes API server was detected", "Evidence": ["            \"api_server_authorized_ip_ranges\": null,\n"]}

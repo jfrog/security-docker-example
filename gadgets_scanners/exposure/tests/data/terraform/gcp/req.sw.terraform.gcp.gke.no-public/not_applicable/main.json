@@ -1,0 +1,304 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 48,
+  "lineage": "d02d0a13-a036-fc71-76e9-a60ce2cdaa4e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_container_cluster",
+      "name": "primary",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "addons_config": [
+              {
+                "cloudrun_config": [],
+                "dns_cache_config": [],
+                "gce_persistent_disk_csi_driver_config": [
+                  {
+                    "enabled": true
+                  }
+                ],
+                "gcp_filestore_csi_driver_config": [],
+                "horizontal_pod_autoscaling": [],
+                "http_load_balancing": [],
+                "network_policy_config": [
+                  {
+                    "disabled": true
+                  }
+                ]
+              }
+            ],
+            "authenticator_groups_config": [],
+            "binary_authorization": [
+              {
+                "enabled": false,
+                "evaluation_mode": ""
+              }
+            ],
+            "cluster_autoscaling": [
+              {
+                "auto_provisioning_defaults": [],
+                "enabled": false,
+                "resource_limits": []
+              }
+            ],
+            "cluster_ipv4_cidr": "10.0.0.0/14",
+            "confidential_nodes": [],
+            "database_encryption": [
+              {
+                "key_name": "",
+                "state": "DECRYPTED"
+              }
+            ],
+            "datapath_provider": "",
+            "default_max_pods_per_node": null,
+            "default_snat_status": [
+              {
+                "disabled": false
+              }
+            ],
+            "description": "",
+            "dns_config": [],
+            "enable_autopilot": false,
+            "enable_binary_authorization": false,
+            "enable_intranode_visibility": false,
+            "enable_kubernetes_alpha": false,
+            "enable_legacy_abac": false,
+            "enable_shielded_nodes": true,
+            "enable_tpu": false,
+            "endpoint": "34.70.50.244",
+            "id": "projects/iac-trials/locations/us-central1/clusters/my-gke-cluster",
+            "initial_node_count": 1,
+            "ip_allocation_policy": [],
+            "label_fingerprint": "a9dc16a7",
+            "location": "us-central1",
+            "logging_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "WORKLOADS"
+                ]
+              }
+            ],
+            "logging_service": "logging.googleapis.com/kubernetes",
+            "maintenance_policy": [],
+            "master_auth": [
+              {
+                "client_certificate": "",
+                "client_certificate_config": [
+                  {
+                    "issue_client_certificate": false
+                  }
+                ],
+                "client_key": "",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUozZ1pBbWEwVFpDRmpmN1hRS2VZTjB3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa01qWm1aV1V4WVdNdE56WTBOaTAwTW1RMUxUaGlaRFV0WmpNME16RTBZV1V3TmpWaApNQ0FYRFRJeU1Ea3hPREE0TURBeU0xb1lEekl3TlRJd09URXdNRGt3TURJeldqQXZNUzB3S3dZRFZRUURFeVF5Ck5tWmxaVEZoWXkwM05qUTJMVFF5WkRVdE9HSmtOUzFtTXpRek1UUmhaVEEyTldFd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDZy9GN2VFMDBscXludUVZZ3ZsYnlUY3JrRWIzNWV6dXNXOFo2OQpVTDRMTEQ0VHBaTHFoQzdMRU1uWHkrdDFSN1BOT0RVRW5zemwrei9HMnkrQTBpVEhIRXM3TEJZRWhnTEcvNUVKCkwvVlI0SFkvQTBLcjQra0tDOW5Vbnp2NjZ5VjlPUnRHTEs5WEZScDl3MlFrYmx2UFpXMzdORXk0b0hMdFNmem4KQm13L2RvaEFKcy9IOVZkU3M0UEpwZFNlMzNZQ3hrVlBMUTZ5enFadWJyWkNRVU5EV2xiRmtJK3VrdVBqcndyQgpDS2hSQ29BNlpYOThWT1JWSDNiSnN0UytDTGhab2NHaUdoSHFvMUlKamFOSXJwMFgrZjBqZU1pL3grc3dTVGRxCkRiYTdQQ2tKWHJDMjJmV05tWTBUbnJpZ0ZWejdFTVNnWVJhOXVaRmFSdXFHOWZrZHd6VERLaStRZllNOEVIbVgKZlJmaUVBR2I2YStFSFozclMwS092UU5BV0lIaWVpWm1XbnJHdzJQdE1PbTZNNytKZDcvc0JDbG90WmF6U1NqNAo2cjUxTG5BK3hBTWc4ZjdNRnljVDNrV2JLYUtwdm9PZmtsUnVleXNMNTBDVjlBV292R3VORzlyeWM0TXlYOVBFClhFMGJNKzZxbXpoNDhCV2ZabFhsWWpiWWdCc0NBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGSHZuNjdCSnExcG9FaEdUSEZyeHZVSmRKUTJCTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQmordmVLcVEraGhXWHU0N3E4TzFZbU5FK0JocXAwZVFMazNBWk00U2J2CnpaWVpKRkN0NnFmSEV4NVhsczlsQmx4UjVHQldzMXlCUWRQSXd2WUJOUDlsMVA5N1RIMUU3UzI4eGZ5V3NkZGMKd1ZIellOaTZrdlBScStuZmkxdzBBV21abXlzOGZNRUs5aE5aSjR6MUlIR0o1bnEyeGlJTm1JV05QVVVmOUYybwoySDFFc2M5bW0zTVFGeGlIRmpNeVlqV0l4d3hBM1lPUjEydk5wc240QUNGc2dhNnYrdkNpTjMvK0ZzaEd1VWQ0CnN2THRTVjNUUnhlOU1UdFNiMDZNQVVuTHpndkdGNFZ6M2N6SDVDUWdxaTlmR0crUTBSa21QelBUSTJDcW4zQmwKenRMbHg1MFR5a1A0S1NEZzdnamVZbkU3WFJXS0tMMStUTGJnVnl1RkRrcUVDdEUyaVEzeDhqb2hOSjlCUytqWQpoRmVDTHFtRU94eWE2Qi9OczVhdk1YcTVSRWFvclh0ajlTeTVOUU9BRlpWQzhUbklQMlZsYk1maExUWGxWSnRPCkdqbEFKOHI4Y2ZYbkF1Tk9jbFVMb0VvR1Rnb0pra0VDbmY4ZmNsV052S1JnelVTNkN4TzE1ZnhkdGgzWk0vN3oKWXYwenVueXBlYkRyR3ZMeVpzWmVhOFU9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "master_authorized_networks_config": [
+              {
+                "cidr_blocks": [
+                  {
+                    "cidr_block": "10.0.0.0/24",
+                    "display_name": "external"
+                  },
+                  {
+                    "cidr_block": "192.0.0.0/24",
+                    "display_name": "external"
+                  }
+                ]
+              }
+            ],
+            "master_version": "1.22.11-gke.400",
+            "mesh_certificates": [],
+            "min_master_version": null,
+            "monitoring_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS"
+                ]
+              }
+            ],
+            "monitoring_service": "monitoring.googleapis.com/kubernetes",
+            "name": "my-gke-cluster",
+            "network": "projects/iac-trials/global/networks/default",
+            "network_policy": [
+              {
+                "enabled": false,
+                "provider": "PROVIDER_UNSPECIFIED"
+              }
+            ],
+            "networking_mode": "ROUTES",
+            "node_config": [],
+            "node_locations": [
+              "us-central1-a",
+              "us-central1-b",
+              "us-central1-c"
+            ],
+            "node_pool": [],
+            "node_version": "1.22.11-gke.400",
+            "notification_config": [
+              {
+                "pubsub": [
+                  {
+                    "enabled": false,
+                    "topic": ""
+                  }
+                ]
+              }
+            ],
+            "operation": null,
+            "private_cluster_config": [],
+            "private_ipv6_google_access": "",
+            "project": "iac-trials",
+            "release_channel": [
+              {
+                "channel": "REGULAR"
+              }
+            ],
+            "remove_default_node_pool": true,
+            "resource_labels": null,
+            "resource_usage_export_config": [],
+            "self_link": "https://container.googleapis.com/v1/projects/iac-trials/locations/us-central1/clusters/my-gke-cluster",
+            "service_external_ips_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "services_ipv4_cidr": "10.3.240.0/20",
+            "subnetwork": "projects/iac-trials/regions/us-central1/subnetworks/default",
+            "timeouts": null,
+            "tpu_ipv4_cidr_block": "",
+            "vertical_pod_autoscaling": [],
+            "workload_identity_config": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAwLCJkZWxldGUiOjI0MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMDAsInVwZGF0ZSI6MzYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_container_node_pool",
+      "name": "primary_preemptible_nodes",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "autoscaling": [],
+            "cluster": "my-gke-cluster",
+            "id": "projects/iac-trials/locations/us-central1/clusters/my-gke-cluster/nodePools/my-node-pool",
+            "initial_node_count": 1,
+            "instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-b/instanceGroupManagers/gke-my-gke-cluster-my-node-pool-3b1183b2-grp",
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-c/instanceGroupManagers/gke-my-gke-cluster-my-node-pool-39efabab-grp",
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-a/instanceGroupManagers/gke-my-gke-cluster-my-node-pool-eb54bbdf-grp"
+            ],
+            "location": "us-central1",
+            "managed_instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-b/instanceGroups/gke-my-gke-cluster-my-node-pool-3b1183b2-grp",
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-c/instanceGroups/gke-my-gke-cluster-my-node-pool-39efabab-grp",
+              "https://www.googleapis.com/compute/v1/projects/iac-trials/zones/us-central1-a/instanceGroups/gke-my-gke-cluster-my-node-pool-eb54bbdf-grp"
+            ],
+            "management": [
+              {
+                "auto_repair": true,
+                "auto_upgrade": true
+              }
+            ],
+            "max_pods_per_node": null,
+            "name": "my-node-pool",
+            "name_prefix": "",
+            "node_config": [
+              {
+                "boot_disk_kms_key": "",
+                "disk_size_gb": 100,
+                "disk_type": "pd-standard",
+                "gcfs_config": [],
+                "guest_accelerator": [],
+                "gvnic": [],
+                "image_type": "COS_CONTAINERD",
+                "labels": {},
+                "local_ssd_count": 0,
+                "machine_type": "e2-medium",
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "min_cpu_platform": "",
+                "node_group": "",
+                "oauth_scopes": [
+                  "https://www.googleapis.com/auth/cloud-platform"
+                ],
+                "preemptible": true,
+                "reservation_affinity": [],
+                "service_account": "service-account-id@iac-trials.iam.gserviceaccount.com",
+                "shielded_instance_config": [
+                  {
+                    "enable_integrity_monitoring": true,
+                    "enable_secure_boot": false
+                  }
+                ],
+                "spot": false,
+                "tags": null,
+                "taint": [],
+                "workload_metadata_config": []
+              }
+            ],
+            "node_count": 1,
+            "node_locations": [
+              "us-central1-a",
+              "us-central1-b",
+              "us-central1-c"
+            ],
+            "operation": null,
+            "project": "iac-trials",
+            "timeouts": null,
+            "upgrade_settings": [
+              {
+                "max_surge": 1,
+                "max_unavailable": 0
+              }
+            ],
+            "version": "1.22.11-gke.400"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "google_container_cluster.primary",
+            "google_service_account.default"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_service_account",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "service-account-id",
+            "description": "",
+            "disabled": false,
+            "display_name": "Service Account",
+            "email": "service-account-id@iac-trials.iam.gserviceaccount.com",
+            "id": "projects/iac-trials/serviceAccounts/service-account-id@iac-trials.iam.gserviceaccount.com",
+            "name": "projects/iac-trials/serviceAccounts/service-account-id@iac-trials.iam.gserviceaccount.com",
+            "project": "iac-trials",
+            "timeouts": null,
+            "unique_id": "110327540039326709155"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    }
+  ]
+}

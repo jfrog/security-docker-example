@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function Extract/Trunc is called with external input", "Evidence": ["Extract(\"start_datetime\", lookup_name)", "Trunc(\"start_datetime\", kind)"]}

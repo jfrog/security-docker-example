@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable function QuerySet.explain is never called with a non-constant argument", "Evidence": []}

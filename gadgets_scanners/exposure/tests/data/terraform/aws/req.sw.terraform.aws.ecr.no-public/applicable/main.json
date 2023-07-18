@@ -1,0 +1,66 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 11,
+  "lineage": "456f807c-2c27-8b13-3065-c4aa73341938",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_ecr_repository",
+      "name": "foo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:ecr:us-west-2:000000000000:repository/bar",
+            "encryption_configuration": [
+              {
+                "encryption_type": "AES256",
+                "kms_key": ""
+              }
+            ],
+            "id": "bar",
+            "image_scanning_configuration": [
+              {
+                "scan_on_push": false
+              }
+            ],
+            "image_tag_mutability": "MUTABLE",
+            "name": "bar",
+            "registry_id": "000000000000",
+            "repository_url": "localhost:4510/bar",
+            "tags": null,
+            "tags_all": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiZGVsZXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ecr_repository_policy",
+      "name": "foopolicy",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "bar",
+            "policy": "{\"Statement\":[{\"Action\":[\"ecr:GetDownloadUrlForLayer\",\"ecr:BatchGetImage\",\"ecr:BatchCheckLayerAvailability\",\"ecr:PutImage\",\"ecr:InitiateLayerUpload\",\"ecr:UploadLayerPart\",\"ecr:CompleteLayerUpload\",\"ecr:DescribeRepositories\",\"ecr:GetRepositoryPolicy\",\"ecr:ListImages\",\"ecr:DeleteRepository\",\"ecr:BatchDeleteImage\",\"ecr:SetRepositoryPolicy\",\"ecr:DeleteRepositoryPolicy\"],\"Effect\":\"Allow\",\"Principal\":\"*\",\"Sid\":\"new policy\"}],\"Version\":\"2008-10-17\"}",
+            "registry_id": "000000000000",
+            "repository": "bar"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_ecr_repository.foo"
+          ]
+        }
+      ]
+    }
+  ]
+}

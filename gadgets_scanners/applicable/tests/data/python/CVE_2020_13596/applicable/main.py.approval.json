@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable ForeignKeyRawIdWidget django widget is used", "Evidence": ["ForeignKeyRawIdWidget(GroupProduct._meta.get_field('products').rel)"]}

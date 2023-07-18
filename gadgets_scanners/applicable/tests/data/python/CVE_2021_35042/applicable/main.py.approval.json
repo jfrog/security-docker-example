@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "django is used, The vulnerable function QuerySet.order_by is called with a non-constant argument", "Evidence": ["Model.query(\"query\").order_by(get_user_input())", "from django.model import Model"]}

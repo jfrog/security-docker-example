@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Missing TLS traffic for app services was detected", "Evidence": ["            \"https_only\": false,\n"]}

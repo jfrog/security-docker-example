@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Option \"Content Security Policy\" is not properly set in nginx configuration", "Evidence": ["  add_header Content-Security-Policy \"style-src 'self'; frame-ancestors 'self' \";\n"]}

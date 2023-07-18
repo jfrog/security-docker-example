@@ -1,0 +1,90 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 42,
+  "lineage": "6a0fca1e-fbca-b068-6177-3fd2c7516682",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_postgresql_server",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "administrator_login": "psqladmin",
+            "administrator_login_password": "aSD@3434H@Sh1CoR3!",
+            "auto_grow_enabled": true,
+            "backup_retention_days": 7,
+            "create_mode": "Default",
+            "creation_source_server_id": null,
+            "fqdn": "example-psqlserver07231213.postgres.database.azure.com",
+            "geo_redundant_backup_enabled": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.DBforPostgreSQL/servers/example-psqlserver07231213",
+            "identity": [],
+            "infrastructure_encryption_enabled": false,
+            "location": "westeurope",
+            "name": "example-psqlserver07231213",
+            "public_network_access_enabled": true,
+            "resource_group_name": "example-resources",
+            "restore_point_in_time": null,
+            "sku_name": "GP_Gen5_4",
+            "ssl_enforcement": "Disabled",
+            "ssl_enforcement_enabled": false,
+            "ssl_minimal_tls_version_enforced": "TLSEnforcementDisabled",
+            "storage_mb": 640000,
+            "storage_profile": [
+              {
+                "auto_grow": "Enabled",
+                "backup_retention_days": 7,
+                "geo_redundant_backup": "Enabled",
+                "storage_mb": 640000
+              }
+            ],
+            "tags": {},
+            "threat_detection_policy": [
+              {
+                "disabled_alerts": [],
+                "email_account_admins": false,
+                "email_addresses": [],
+                "enabled": true,
+                "retention_days": 0,
+                "storage_account_access_key": "",
+                "storage_endpoint": ""
+              }
+            ],
+            "timeouts": null,
+            "version": "11"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources",
+            "location": "westeurope",
+            "name": "example-resources",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ]
+}

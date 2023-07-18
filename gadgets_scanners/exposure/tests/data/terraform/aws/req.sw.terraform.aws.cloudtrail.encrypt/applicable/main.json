@@ -1,0 +1,134 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 8,
+  "lineage": "3b5dbc9e-8051-e80b-a023-7e3bdd81667e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "data",
+      "type": "aws_caller_identity",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "000000000000",
+            "arn": "arn:aws:sts::000000000000:user/localstack",
+            "id": "000000000000",
+            "user_id": "AKIAIOSFODNN7EXAMPLE"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_cloudtrail",
+      "name": "foobar",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "advanced_event_selector": [],
+            "arn": "arn:aws:cloudtrail:us-west-2:000000000000:trail/tf-trail-foobar",
+            "cloud_watch_logs_group_arn": "",
+            "cloud_watch_logs_role_arn": "",
+            "enable_log_file_validation": false,
+            "enable_logging": true,
+            "event_selector": [],
+            "home_region": "",
+            "id": "tf-trail-foobar",
+            "include_global_service_events": false,
+            "insight_selector": [],
+            "is_multi_region_trail": false,
+            "is_organization_trail": false,
+            "kms_key_id": "",
+            "name": "tf-trail-foobar",
+            "s3_bucket_name": "tf-test-trail",
+            "s3_key_prefix": "prefix",
+            "sns_topic_name": "",
+            "tags": {},
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.foo"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "foo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::tf-test-trail",
+            "bucket": "tf-test-trail",
+            "bucket_domain_name": "tf-test-trail.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "tf-test-trail.s3.us-west-2.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": true,
+            "grant": [],
+            "hosted_zone_id": "Z3BJ6K6RIION7M",
+            "id": "tf-test-trail",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "object_lock_enabled": false,
+            "policy": null,
+            "region": "us-west-2",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": {},
+            "tags_all": {},
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket_policy",
+      "name": "foo",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "bucket": "tf-test-trail",
+            "id": "tf-test-trail",
+            "policy": "{\"Statement\":[{\"Action\":\"s3:GetBucketAcl\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Resource\":\"arn:aws:s3:::tf-test-trail\",\"Sid\":\"AWSCloudTrailAclCheck\"},{\"Action\":\"s3:PutObject\",\"Condition\":{\"StringEquals\":{\"s3:x-amz-acl\":\"bucket-owner-full-control\"}},\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"cloudtrail.amazonaws.com\"},\"Resource\":\"arn:aws:s3:::tf-test-trail/prefix/AWSLogs/000000000000/*\",\"Sid\":\"AWSCloudTrailWrite\"}],\"Version\":\"2012-10-17\"}"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_s3_bucket.foo",
+            "data.aws_caller_identity.current"
+          ]
+        }
+      ]
+    }
+  ]
+}

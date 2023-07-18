@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Publicly accessible bucket (member) was detected", "Evidence": ["            \"member\": \"allUsers\"\n"]}

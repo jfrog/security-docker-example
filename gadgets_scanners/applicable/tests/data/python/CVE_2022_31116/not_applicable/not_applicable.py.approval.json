@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function ujson.loads is never called with external input",
+    "Evidence": []
+}

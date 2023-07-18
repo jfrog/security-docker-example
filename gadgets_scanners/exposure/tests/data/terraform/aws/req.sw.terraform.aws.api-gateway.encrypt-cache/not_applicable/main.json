@@ -1,0 +1,191 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 11,
+  "lineage": "37b00225-bce6-581f-2a62-4379c62ba876",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_deployment",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "created_date": "2022-06-13T13:28:55Z",
+            "description": "",
+            "execution_arn": "arn:aws:execute-api:us-west-2:000000000000:jzkye98bcg/",
+            "id": "7jr6woku5o",
+            "invoke_url": "https://jzkye98bcg.execute-api.us-west-2.amazonaws.com/",
+            "rest_api_id": "jzkye98bcg",
+            "stage_description": null,
+            "stage_name": null,
+            "triggers": {
+              "redeployment": "145be397ea51cabb14595b0f0ace006017953f0a"
+            },
+            "variables": null
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_rest_api.example"
+          ],
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_method_settings",
+      "name": "all",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "jzkye98bcg-example-*/*",
+            "method_path": "*/*",
+            "rest_api_id": "jzkye98bcg",
+            "settings": [
+              {
+                "cache_data_encrypted": true,
+                "cache_ttl_in_seconds": 0,
+                "caching_enabled": true,
+                "data_trace_enabled": false,
+                "logging_level": "ERROR",
+                "metrics_enabled": true,
+                "require_authorization_for_cache_control": false,
+                "throttling_burst_limit": -1,
+                "throttling_rate_limit": -1,
+                "unauthorized_cache_control_header_strategy": ""
+              }
+            ],
+            "stage_name": "example"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_rest_api.example",
+            "aws_api_gateway_stage.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_method_settings",
+      "name": "path_specific",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "jzkye98bcg-example-path1/GET",
+            "method_path": "path1/GET",
+            "rest_api_id": "jzkye98bcg",
+            "settings": [
+              {
+                "cache_data_encrypted": true,
+                "cache_ttl_in_seconds": 0,
+                "caching_enabled": true,
+                "data_trace_enabled": false,
+                "logging_level": "INFO",
+                "metrics_enabled": true,
+                "require_authorization_for_cache_control": false,
+                "throttling_burst_limit": -1,
+                "throttling_rate_limit": -1,
+                "unauthorized_cache_control_header_strategy": ""
+              }
+            ],
+            "stage_name": "example"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_rest_api.example",
+            "aws_api_gateway_stage.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_rest_api",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "api_key_source": "HEADER",
+            "arn": "arn:aws:apigateway:us-west-2::/restapis/jzkye98bcg",
+            "binary_media_types": [],
+            "body": "{\"info\":{\"title\":\"example\",\"version\":\"1.0\"},\"openapi\":\"3.0.1\",\"paths\":{\"/path1\":{\"get\":{\"x-amazon-apigateway-integration\":{\"httpMethod\":\"GET\",\"payloadFormatVersion\":\"1.0\",\"type\":\"HTTP_PROXY\",\"uri\":\"https://ip-ranges.amazonaws.com/ip-ranges.json\"}}}}}",
+            "created_date": "2022-06-13T13:28:55Z",
+            "description": "",
+            "disable_execute_api_endpoint": false,
+            "endpoint_configuration": [
+              {
+                "types": [
+                  "EDGE"
+                ],
+                "vpc_endpoint_ids": []
+              }
+            ],
+            "execution_arn": "arn:aws:execute-api:us-west-2:000000000000:jzkye98bcg",
+            "id": "jzkye98bcg",
+            "minimum_compression_size": -1,
+            "name": "example",
+            "parameters": null,
+            "policy": "",
+            "root_resource_id": "6ph61hklpi",
+            "tags": {},
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "create_before_destroy": true
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_stage",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access_log_settings": [],
+            "arn": "arn:aws:apigateway:us-west-2::/restapis/jzkye98bcg/stages/example",
+            "cache_cluster_enabled": false,
+            "cache_cluster_size": "",
+            "client_certificate_id": "",
+            "deployment_id": "7jr6woku5o",
+            "description": "",
+            "documentation_version": "",
+            "execution_arn": "arn:aws:execute-api:us-west-2:000000000000:jzkye98bcg/example",
+            "id": "ags-jzkye98bcg-example",
+            "invoke_url": "https://jzkye98bcg.execute-api.us-west-2.amazonaws.com/example",
+            "rest_api_id": "jzkye98bcg",
+            "stage_name": "example",
+            "tags": {},
+            "tags_all": {},
+            "variables": {},
+            "web_acl_arn": "",
+            "xray_tracing_enabled": false
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_deployment.example",
+            "aws_api_gateway_rest_api.example"
+          ]
+        }
+      ]
+    }
+  ]
+}

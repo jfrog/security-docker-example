@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.EditDistance is called",
+    "Evidence": [
+        "tf.raw_ops.EditDistance(**para)"
+    ]
+}

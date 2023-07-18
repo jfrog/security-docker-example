@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable function Extract/Trunc is never called with external input", "Evidence": []}

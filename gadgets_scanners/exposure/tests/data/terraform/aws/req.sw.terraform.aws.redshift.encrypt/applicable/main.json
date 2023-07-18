@@ -1,0 +1,65 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 1,
+  "lineage": "9d5c10a8-89e7-040c-0776-2ce768d8863b",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_redshift_cluster",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "allow_version_upgrade": true,
+            "arn": null,
+            "automated_snapshot_retention_period": 1,
+            "availability_zone": null,
+            "cluster_identifier": "tf-redshift-cluster",
+            "cluster_nodes": null,
+            "cluster_parameter_group_name": null,
+            "cluster_public_key": null,
+            "cluster_revision_number": null,
+            "cluster_security_groups": [],
+            "cluster_subnet_group_name": null,
+            "cluster_type": "single-node",
+            "cluster_version": "1.0",
+            "database_name": "mydb",
+            "dns_name": null,
+            "elastic_ip": null,
+            "encrypted": false,
+            "endpoint": null,
+            "enhanced_vpc_routing": null,
+            "final_snapshot_identifier": null,
+            "iam_roles": [],
+            "id": "tf-redshift-cluster",
+            "kms_key_id": null,
+            "logging": [],
+            "master_password": "Mustbe8characters",
+            "master_username": "exampleuser",
+            "node_type": "dc1.large",
+            "number_of_nodes": 1,
+            "owner_account": null,
+            "port": 5439,
+            "preferred_maintenance_window": null,
+            "publicly_accessible": true,
+            "skip_final_snapshot": false,
+            "snapshot_cluster_identifier": null,
+            "snapshot_copy": [],
+            "snapshot_identifier": null,
+            "tags": null,
+            "tags_all": null,
+            "timeouts": null,
+            "vpc_security_group_ids": []
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo0NTAwMDAwMDAwMDAwLCJkZWxldGUiOjI0MDAwMDAwMDAwMDAsInVwZGF0ZSI6NDUwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ]
+}

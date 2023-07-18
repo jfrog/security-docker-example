@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Potential use of weak TLS protocol was detected", "Evidence": ["Context(TLSv1_1_METHOD)"]}

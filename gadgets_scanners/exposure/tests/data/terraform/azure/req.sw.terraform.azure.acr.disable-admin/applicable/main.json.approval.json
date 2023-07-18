@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Admin user was enabled for the container registry", "Evidence": ["            \"admin_enabled\": true,\n"]}

@@ -1,0 +1,80 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 35,
+  "lineage": "33945618-0590-06ce-7894-8cee70a647d6",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_managed_disk",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "create_option": "Empty",
+            "disk_access_id": "",
+            "disk_encryption_set_id": "",
+            "disk_iops_read_only": 0,
+            "disk_iops_read_write": 500,
+            "disk_mbps_read_only": 0,
+            "disk_mbps_read_write": 60,
+            "disk_size_gb": 1,
+            "encryption_settings": [],
+            "gallery_image_reference_id": "",
+            "hyper_v_generation": "",
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resourcesbeta104/providers/Microsoft.Compute/disks/acctestmd",
+            "image_reference_id": "",
+            "location": "westeurope",
+            "logical_sector_size": null,
+            "max_shares": 0,
+            "name": "acctestmd",
+            "network_access_policy": null,
+            "on_demand_bursting_enabled": false,
+            "os_type": "",
+            "public_network_access_enabled": true,
+            "resource_group_name": "example-resourcesbeta104",
+            "source_resource_id": "",
+            "source_uri": "",
+            "storage_account_id": "",
+            "storage_account_type": "Standard_LRS",
+            "tags": {
+              "environment": "staging"
+            },
+            "tier": "",
+            "timeouts": null,
+            "trusted_launch_enabled": false,
+            "zones": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resourcesbeta104",
+            "location": "westeurope",
+            "name": "example-resourcesbeta104",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ]
+}

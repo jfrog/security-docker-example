@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Encryption disabled was detected", "Evidence": ["            \"encryption_state\": \"Disabled\"\n"]}

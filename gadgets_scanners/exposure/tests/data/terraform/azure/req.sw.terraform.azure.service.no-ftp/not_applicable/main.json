@@ -1,0 +1,250 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 108,
+  "lineage": "6a0fca1e-fbca-b068-6177-3fd2c7516682",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_app_service",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_service_plan_id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Web/serverfarms/example-appserviceplan",
+            "app_settings": {
+              "SOME_KEY": "some-value"
+            },
+            "auth_settings": [
+              {
+                "active_directory": [],
+                "additional_login_params": {},
+                "allowed_external_redirect_urls": [],
+                "default_provider": "",
+                "enabled": false,
+                "facebook": [],
+                "google": [],
+                "issuer": "",
+                "microsoft": [],
+                "runtime_version": "",
+                "token_refresh_extension_hours": 0,
+                "token_store_enabled": false,
+                "twitter": [],
+                "unauthenticated_client_action": ""
+              }
+            ],
+            "backup": [],
+            "client_affinity_enabled": false,
+            "client_cert_enabled": false,
+            "client_cert_mode": "Required",
+            "connection_string": [
+              {
+                "name": "Database",
+                "type": "SQLServer",
+                "value": "Server=some-server.mydomain.com;Integrated Security=SSPI"
+              }
+            ],
+            "custom_domain_verification_id": "4DFC028D832DBD8C0BED2166558D437B106A786959AAB6935C59B6CD45674684",
+            "default_site_hostname": "example-app-service127438742.azurewebsites.net",
+            "enabled": true,
+            "https_only": false,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Web/sites/example-app-service127438742",
+            "identity": [],
+            "key_vault_reference_identity_id": "SystemAssigned",
+            "location": "westeurope",
+            "logs": [
+              {
+                "application_logs": [
+                  {
+                    "azure_blob_storage": [],
+                    "file_system_level": "Off"
+                  }
+                ],
+                "detailed_error_messages_enabled": false,
+                "failed_request_tracing_enabled": false,
+                "http_logs": [
+                  {
+                    "azure_blob_storage": [],
+                    "file_system": []
+                  }
+                ]
+              }
+            ],
+            "name": "example-app-service127438742",
+            "outbound_ip_address_list": [
+              "20.126.163.33",
+              "20.126.163.106",
+              "20.126.163.213",
+              "20.126.164.34",
+              "20.126.164.103",
+              "20.126.164.124",
+              "20.105.232.13"
+            ],
+            "outbound_ip_addresses": "20.126.163.33,20.126.163.106,20.126.163.213,20.126.164.34,20.126.164.103,20.126.164.124,20.105.232.13",
+            "possible_outbound_ip_address_list": [
+              "20.126.163.33",
+              "20.126.163.106",
+              "20.126.163.213",
+              "20.126.164.34",
+              "20.126.164.103",
+              "20.126.164.124",
+              "20.126.164.168",
+              "20.126.165.10",
+              "20.126.165.74",
+              "20.126.165.111",
+              "20.126.165.125",
+              "20.126.165.131",
+              "20.126.165.144",
+              "20.126.165.183",
+              "20.126.165.204",
+              "20.126.165.219",
+              "20.126.165.232",
+              "20.126.165.237",
+              "20.126.166.33",
+              "20.126.166.75",
+              "20.126.166.85",
+              "20.126.166.95",
+              "20.126.166.160",
+              "20.126.166.208",
+              "20.126.166.209",
+              "20.126.166.221",
+              "20.126.167.1",
+              "20.126.167.33",
+              "20.126.167.41",
+              "20.126.167.45",
+              "20.105.232.13"
+            ],
+            "possible_outbound_ip_addresses": "20.126.163.33,20.126.163.106,20.126.163.213,20.126.164.34,20.126.164.103,20.126.164.124,20.126.164.168,20.126.165.10,20.126.165.74,20.126.165.111,20.126.165.125,20.126.165.131,20.126.165.144,20.126.165.183,20.126.165.204,20.126.165.219,20.126.165.232,20.126.165.237,20.126.166.33,20.126.166.75,20.126.166.85,20.126.166.95,20.126.166.160,20.126.166.208,20.126.166.209,20.126.166.221,20.126.167.1,20.126.167.33,20.126.167.41,20.126.167.45,20.105.232.13",
+            "resource_group_name": "example-resources",
+            "site_config": [
+              {
+                "acr_use_managed_identity_credentials": false,
+                "acr_user_managed_identity_client_id": "",
+                "always_on": false,
+                "app_command_line": "",
+                "auto_swap_slot_name": "",
+                "cors": [
+                  {
+                    "allowed_origins": [],
+                    "support_credentials": false
+                  }
+                ],
+                "default_documents": null,
+                "dotnet_framework_version": "v4.0",
+                "ftps_state": "Disabled",
+                "health_check_path": "",
+                "http2_enabled": false,
+                "ip_restriction": [],
+                "java_container": "",
+                "java_container_version": "",
+                "java_version": "",
+                "linux_fx_version": "",
+                "local_mysql_enabled": false,
+                "managed_pipeline_mode": "Integrated",
+                "min_tls_version": "1.2",
+                "number_of_workers": 1,
+                "php_version": "",
+                "python_version": "",
+                "remote_debugging_enabled": false,
+                "remote_debugging_version": "VS2019",
+                "scm_ip_restriction": [],
+                "scm_type": "LocalGit",
+                "scm_use_main_ip_restriction": false,
+                "use_32_bit_worker_process": false,
+                "vnet_route_all_enabled": false,
+                "websockets_enabled": false,
+                "windows_fx_version": ""
+              }
+            ],
+            "site_credential": [
+              {
+                "password": "LMblLi8vTtlZRPurHbQi3x6GXnL4HH3e6uFJEfyT5WcSfeiAgFa0ltro0Soz",
+                "username": "$example-app-service127438742"
+              }
+            ],
+            "source_control": [
+              {
+                "branch": "master",
+                "manual_integration": false,
+                "repo_url": "https://example-app-service127438742.scm.azurewebsites.net",
+                "rollback_enabled": false,
+                "use_mercurial": false
+              }
+            ],
+            "storage_account": [],
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_app_service_plan.example",
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_app_service_plan",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_service_environment_id": "",
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources/providers/Microsoft.Web/serverfarms/example-appserviceplan",
+            "is_xenon": false,
+            "kind": "Windows",
+            "location": "westeurope",
+            "maximum_elastic_worker_count": 1,
+            "maximum_number_of_workers": 10,
+            "name": "example-appserviceplan",
+            "per_site_scaling": false,
+            "reserved": false,
+            "resource_group_name": "example-resources",
+            "sku": [
+              {
+                "capacity": 1,
+                "size": "S1",
+                "tier": "Standard"
+              }
+            ],
+            "tags": null,
+            "timeouts": null,
+            "zone_redundant": false
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources",
+            "location": "westeurope",
+            "name": "example-resources",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "Answer": true,
+    "Verdict": "Default passwords were found",
+    "Evidence": [
+        "Password\": \"MyPassword\"",
+        "Password\": \"mynewpassword\"",
+        "Password\": \"mynewpassword\"",
+        "Password\": \"mypassword\""
+    ]
+}

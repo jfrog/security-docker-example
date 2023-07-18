@@ -1,0 +1,70 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 19,
+  "lineage": "8f4e6592-36bb-d47f-cb5b-ede571571091",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_cloudwatch_log_group",
+      "name": "yada",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:logs:us-west-2:000000000000:log-group:Yada",
+            "id": "Yada",
+            "kms_key_id": "arn:aws:kms:us-west-2:000000000000:key/a1f3028b-f287-4bac-938a-c916c0a9d62b",
+            "name": "Yada",
+            "name_prefix": null,
+            "retention_in_days": 0,
+            "tags": {
+              "Application": "serviceA",
+              "Environment": "production"
+            },
+            "tags_all": {
+              "Application": "serviceA",
+              "Environment": "production"
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_kms_key.a"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_kms_key",
+      "name": "a",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:kms:us-west-2:000000000000:key/a1f3028b-f287-4bac-938a-c916c0a9d62b",
+            "bypass_policy_lockout_safety_check": false,
+            "customer_master_key_spec": "SYMMETRIC_DEFAULT",
+            "deletion_window_in_days": 10,
+            "description": "KMS key 1",
+            "enable_key_rotation": false,
+            "id": "a1f3028b-f287-4bac-938a-c916c0a9d62b",
+            "is_enabled": true,
+            "key_id": "a1f3028b-f287-4bac-938a-c916c0a9d62b",
+            "key_usage": "ENCRYPT_DECRYPT",
+            "multi_region": false,
+            "policy": "{\"Id\":\"key-default-1\",\"Statement\":[{\"Action\":\"kms:*\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::000000000000:root\"},\"Resource\":\"*\",\"Sid\":\"Enable IAM User Permissions\"}],\"Version\":\"2012-10-17\"}",
+            "tags": null,
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

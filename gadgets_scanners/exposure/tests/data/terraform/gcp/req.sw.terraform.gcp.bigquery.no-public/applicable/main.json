@@ -1,0 +1,115 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 77,
+  "lineage": "d02d0a13-a036-fc71-76e9-a60ce2cdaa4e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_bigquery_dataset",
+      "name": "dataset",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access": [
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "role": "READER",
+                "special_group": "allAuthenticatedUsers",
+                "user_by_email": "",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": null,
+                "group_by_email": null,
+                "role": "OWNER",
+                "special_group": null,
+                "user_by_email": "bqowner@iac-trials.iam.gserviceaccount.com",
+                "view": []
+              }
+            ],
+            "creation_time": 1663498787765,
+            "dataset_id": "example_dataset",
+            "default_encryption_configuration": [],
+            "default_partition_expiration_ms": 0,
+            "default_table_expiration_ms": 3600000,
+            "delete_contents_on_destroy": false,
+            "description": "This is a test description",
+            "etag": "xt6cbpzmBiOItQnHf3PJKw==",
+            "friendly_name": "test",
+            "id": "projects/iac-trials/datasets/example_dataset",
+            "labels": {
+              "env": "default"
+            },
+            "last_modified_time": 1663499042926,
+            "location": "EU",
+            "project": "iac-trials",
+            "self_link": "https://bigquery.googleapis.com/bigquery/v2/projects/iac-trials/datasets/example_dataset",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "google_service_account.bqowner"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_service_account",
+      "name": "bqowner",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "bqowner",
+            "description": "",
+            "disabled": false,
+            "display_name": "",
+            "email": "bqowner@iac-trials.iam.gserviceaccount.com",
+            "id": "projects/iac-trials/serviceAccounts/bqowner@iac-trials.iam.gserviceaccount.com",
+            "name": "projects/iac-trials/serviceAccounts/bqowner@iac-trials.iam.gserviceaccount.com",
+            "project": "iac-trials",
+            "timeouts": null,
+            "unique_id": "116307833891737246058"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_service_account",
+      "name": "default",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "service-account-id",
+            "description": "",
+            "disabled": false,
+            "display_name": "Service Account",
+            "email": "service-account-id@iac-trials.iam.gserviceaccount.com",
+            "id": "projects/iac-trials/serviceAccounts/service-account-id@iac-trials.iam.gserviceaccount.com",
+            "name": "projects/iac-trials/serviceAccounts/service-account-id@iac-trials.iam.gserviceaccount.com",
+            "project": "iac-trials",
+            "timeouts": null,
+            "unique_id": "113898930266992137797"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDB9fQ=="
+        }
+      ]
+    }
+  ]
+}

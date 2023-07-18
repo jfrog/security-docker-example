@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function django.utils.numberformat.format is called with a non-constant argument", "Evidence": ["format(val)"]}

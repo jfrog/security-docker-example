@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 7,
+  "lineage": "456f807c-2c27-8b13-3065-c4aa73341938",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_batch_job_definition",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "arn": "arn:aws:batch:us-west-2:000000000000:job-definition/tf_test_batch_job_definition:3",
+            "container_properties": "{\"command\":[\"ls\",\"-la\"],\"environment\":[{\"name\":\"VARNAME\",\"value\":\"VARVAL\"}],\"image\":\"busybox\",\"memory\":1024,\"mountPoints\":[{\"containerPath\":\"/tmp\",\"readOnly\":false,\"sourceVolume\":\"tmp\"}],\"privileged\":true,\"resourceRequirements\":[],\"secrets\":[],\"ulimits\":[{\"hardLimit\":1024,\"name\":\"nofile\",\"softLimit\":1024}],\"vcpus\":1,\"volumes\":[{\"host\":{\"sourcePath\":\"/tmp\"},\"name\":\"tmp\"}]}",
+            "id": "arn:aws:batch:us-west-2:000000000000:job-definition/tf_test_batch_job_definition:3",
+            "name": "tf_test_batch_job_definition",
+            "parameters": null,
+            "platform_capabilities": null,
+            "propagate_tags": false,
+            "retry_strategy": [],
+            "revision": 3,
+            "tags": null,
+            "tags_all": {},
+            "timeout": [],
+            "type": "container"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

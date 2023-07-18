@@ -1,0 +1,29 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function yaml.full_load/load is called",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/applicable2.py",
+                            "yaml.load(f, Loader=yaml.FullLoader)",
+                            "4",
+                            "The vulnerable function yaml.full_load/load is called"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

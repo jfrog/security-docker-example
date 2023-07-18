@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "allow_renegotiation=true was detected",
+    "Evidence": [
+        "                \"allow_renegotiation\": true,\n"
+    ]
+}

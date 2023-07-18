@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "The vulnerable function tarfile.open is never called with external input", "Evidence": []}

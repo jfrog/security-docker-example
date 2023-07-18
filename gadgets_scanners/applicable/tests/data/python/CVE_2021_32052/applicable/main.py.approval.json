@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable dango.URLValidator is used", "Evidence": ["URLValidator", "URLValidator(get_url())", "valid"]}

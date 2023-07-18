@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "Rate limiting module is used", "Evidence": ["rateLimit", "require('express-rate-limit')"]}

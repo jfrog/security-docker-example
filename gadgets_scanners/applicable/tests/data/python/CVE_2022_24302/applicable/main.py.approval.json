@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable method write_private_key_file is called", "Evidence": ["NOT_PKey_instance.write_private_key_file()", "key.write_private_key_file()"]}

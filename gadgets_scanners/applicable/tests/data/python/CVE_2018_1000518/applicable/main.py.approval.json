@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable class tornado.websocket is used", "Evidence": ["socket", "tornado.websocket", "tornado.websocket()"]}

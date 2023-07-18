@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable function tensorflow.raw_ops.TensorArrayConcatV2 is never called",
+    "Evidence": []
+}

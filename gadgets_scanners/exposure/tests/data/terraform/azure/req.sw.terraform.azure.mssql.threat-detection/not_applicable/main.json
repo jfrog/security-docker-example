@@ -1,0 +1,255 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 11,
+  "lineage": "33945618-0590-06ce-7894-8cee70a647d6",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_mssql_server_security_alert_policy",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "disabled_alerts": [
+              "Data_Exfiltration",
+              "Sql_Injection"
+            ],
+            "email_account_admins": false,
+            "email_addresses": null,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources-ASJDFL/providers/Microsoft.Sql/servers/mysqlserver23143/securityAlertPolicies/Default",
+            "resource_group_name": "example-resources-ASJDFL",
+            "retention_days": 20,
+            "server_name": "mysqlserver23143",
+            "state": "Enabled",
+            "storage_account_access_key": "AYI4lSubpD45yBZSXvbrFMj0V2l6T9zYYKK9lyXgLsyuAdBjrQeJ4vVN/dsuFi9Je23U/84wgIZG+ASty7VBOw==",
+            "storage_endpoint": "https://accteststorageaccountasd.blob.core.windows.net/",
+            "timeouts": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "storage_account_access_key"
+              }
+            ]
+          ],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example",
+            "azurerm_sql_server.example",
+            "azurerm_storage_account.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources-ASJDFL",
+            "location": "westeurope",
+            "name": "example-resources-ASJDFL",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_sql_server",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "administrator_login": "4dm1n157r470r",
+            "administrator_login_password": "4-v3ry-53cr37-p455w0rd",
+            "connection_policy": "Default",
+            "extended_auditing_policy": [],
+            "fully_qualified_domain_name": "mysqlserver23143.database.windows.net",
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources-ASJDFL/providers/Microsoft.Sql/servers/mysqlserver23143",
+            "identity": [],
+            "location": "westeurope",
+            "name": "mysqlserver23143",
+            "resource_group_name": "example-resources-ASJDFL",
+            "tags": null,
+            "threat_detection_policy": [
+              {
+                "disabled_alerts": [
+                  ""
+                ],
+                "email_account_admins": false,
+                "email_addresses": [
+                  ""
+                ],
+                "retention_days": 0,
+                "state": "Disabled",
+                "storage_account_access_key": "",
+                "storage_endpoint": ""
+              }
+            ],
+            "timeouts": null,
+            "version": "12.0"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_storage_account",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "access_tier": "Hot",
+            "account_kind": "StorageV2",
+            "account_replication_type": "GRS",
+            "account_tier": "Standard",
+            "allow_blob_public_access": false,
+            "azure_files_authentication": [],
+            "blob_properties": [
+              {
+                "change_feed_enabled": false,
+                "container_delete_retention_policy": [],
+                "cors_rule": [],
+                "default_service_version": "",
+                "delete_retention_policy": [],
+                "last_access_time_enabled": false,
+                "versioning_enabled": false
+              }
+            ],
+            "custom_domain": [],
+            "customer_managed_key": [],
+            "enable_https_traffic_only": true,
+            "id": "/subscriptions/97d7e666-21b1-4d0d-b410-8215f25dbe7f/resourceGroups/example-resources-ASJDFL/providers/Microsoft.Storage/storageAccounts/accteststorageaccountasd",
+            "identity": [],
+            "infrastructure_encryption_enabled": false,
+            "is_hns_enabled": false,
+            "large_file_share_enabled": null,
+            "location": "westeurope",
+            "min_tls_version": "TLS1_0",
+            "name": "accteststorageaccountasd",
+            "network_rules": [
+              {
+                "bypass": [
+                  "AzureServices"
+                ],
+                "default_action": "Allow",
+                "ip_rules": [],
+                "private_link_access": [],
+                "virtual_network_subnet_ids": []
+              }
+            ],
+            "nfsv3_enabled": false,
+            "primary_access_key": "AYI4lSubpD45yBZSXvbrFMj0V2l6T9zYYKK9lyXgLsyuAdBjrQeJ4vVN/dsuFi9Je23U/84wgIZG+ASty7VBOw==",
+            "primary_blob_connection_string": "DefaultEndpointsProtocol=https;BlobEndpoint=https://accteststorageaccountasd.blob.core.windows.net/;AccountName=accteststorageaccountasd;AccountKey=AYI4lSubpD45yBZSXvbrFMj0V2l6T9zYYKK9lyXgLsyuAdBjrQeJ4vVN/dsuFi9Je23U/84wgIZG+ASty7VBOw==",
+            "primary_blob_endpoint": "https://accteststorageaccountasd.blob.core.windows.net/",
+            "primary_blob_host": "accteststorageaccountasd.blob.core.windows.net",
+            "primary_connection_string": "DefaultEndpointsProtocol=https;AccountName=accteststorageaccountasd;AccountKey=AYI4lSubpD45yBZSXvbrFMj0V2l6T9zYYKK9lyXgLsyuAdBjrQeJ4vVN/dsuFi9Je23U/84wgIZG+ASty7VBOw==;EndpointSuffix=core.windows.net",
+            "primary_dfs_endpoint": "https://accteststorageaccountasd.dfs.core.windows.net/",
+            "primary_dfs_host": "accteststorageaccountasd.dfs.core.windows.net",
+            "primary_file_endpoint": "https://accteststorageaccountasd.file.core.windows.net/",
+            "primary_file_host": "accteststorageaccountasd.file.core.windows.net",
+            "primary_location": "westeurope",
+            "primary_queue_endpoint": "https://accteststorageaccountasd.queue.core.windows.net/",
+            "primary_queue_host": "accteststorageaccountasd.queue.core.windows.net",
+            "primary_table_endpoint": "https://accteststorageaccountasd.table.core.windows.net/",
+            "primary_table_host": "accteststorageaccountasd.table.core.windows.net",
+            "primary_web_endpoint": "https://accteststorageaccountasd.z6.web.core.windows.net/",
+            "primary_web_host": "accteststorageaccountasd.z6.web.core.windows.net",
+            "queue_encryption_key_type": "Service",
+            "queue_properties": [
+              {
+                "cors_rule": [],
+                "hour_metrics": [
+                  {
+                    "enabled": true,
+                    "include_apis": true,
+                    "retention_policy_days": 7,
+                    "version": "1.0"
+                  }
+                ],
+                "logging": [
+                  {
+                    "delete": false,
+                    "read": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0",
+                    "write": false
+                  }
+                ],
+                "minute_metrics": [
+                  {
+                    "enabled": false,
+                    "include_apis": false,
+                    "retention_policy_days": 0,
+                    "version": "1.0"
+                  }
+                ]
+              }
+            ],
+            "resource_group_name": "example-resources-ASJDFL",
+            "routing": [],
+            "secondary_access_key": "fiNBRy0jnVlb4qA6GJWs/bdd1C622sgAid8gqizP3eLMBG9TNo4n4d+JXk1GJ3lCX5KCqfYlFg9t+ASte1xjfA==",
+            "secondary_blob_connection_string": "",
+            "secondary_blob_endpoint": null,
+            "secondary_blob_host": null,
+            "secondary_connection_string": "DefaultEndpointsProtocol=https;AccountName=accteststorageaccountasd;AccountKey=fiNBRy0jnVlb4qA6GJWs/bdd1C622sgAid8gqizP3eLMBG9TNo4n4d+JXk1GJ3lCX5KCqfYlFg9t+ASte1xjfA==;EndpointSuffix=core.windows.net",
+            "secondary_dfs_endpoint": null,
+            "secondary_dfs_host": null,
+            "secondary_file_endpoint": null,
+            "secondary_file_host": null,
+            "secondary_location": "northeurope",
+            "secondary_queue_endpoint": null,
+            "secondary_queue_host": null,
+            "secondary_table_endpoint": null,
+            "secondary_table_host": null,
+            "secondary_web_endpoint": null,
+            "secondary_web_host": null,
+            "share_properties": [
+              {
+                "cors_rule": [],
+                "retention_policy": [
+                  {
+                    "days": 7
+                  }
+                ],
+                "smb": []
+              }
+            ],
+            "shared_access_key_enabled": true,
+            "static_website": [],
+            "table_encryption_key_type": "Service",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIyIn0=",
+          "dependencies": [
+            "azurerm_resource_group.example"
+          ]
+        }
+      ]
+    }
+  ]
+}

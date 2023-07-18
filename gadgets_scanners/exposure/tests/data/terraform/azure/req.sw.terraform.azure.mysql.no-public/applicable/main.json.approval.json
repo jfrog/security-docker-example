@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public access to MySQL was detected", "Evidence": ["            \"public_network_access_enabled\": true,\n"]}

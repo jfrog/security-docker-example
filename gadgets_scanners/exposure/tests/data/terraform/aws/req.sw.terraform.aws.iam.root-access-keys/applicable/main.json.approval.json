@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "root user with status Active was detected", "Evidence": ["            \"user\": \"root\"\n"]}

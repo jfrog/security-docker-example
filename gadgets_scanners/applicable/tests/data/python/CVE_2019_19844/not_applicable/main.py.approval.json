@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "The vulnerable Django password reset functionality is not enabled",
+    "Evidence": []
+}

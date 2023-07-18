@@ -1,0 +1,117 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.0",
+  "serial": 25,
+  "lineage": "d02d0a13-a036-fc71-76e9-a60ce2cdaa4e",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "clone": [],
+            "connection_name": "iac-trials:us-central1:main-instance1",
+            "database_version": "POSTGRES_14",
+            "deletion_protection": true,
+            "encryption_key_name": null,
+            "first_ip_address": "35.188.167.190",
+            "id": "main-instance1",
+            "ip_address": [
+              {
+                "ip_address": "35.188.167.190",
+                "time_to_retire": "",
+                "type": "PRIMARY"
+              },
+              {
+                "ip_address": "34.172.186.44",
+                "time_to_retire": "",
+                "type": "OUTGOING"
+              }
+            ],
+            "master_instance_name": "",
+            "name": "main-instance1",
+            "private_ip_address": "",
+            "project": "iac-trials",
+            "public_ip_address": "35.188.167.190",
+            "region": "us-central1",
+            "replica_configuration": [],
+            "restore_backup_context": [],
+            "root_password": null,
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/iac-trials/instances/main-instance1",
+            "server_ca_cert": [
+              {
+                "cert": "-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyRlZDc4\nNmQ3Ny02MzlhLTQ5ZTAtODc3NC1iMDMyNTA2YjEwZGMxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjIwOTE1MTIxOTU2WhcNMzIwOTEyMTIyMDU2WjB3MS0wKwYD\nVQQuEyRlZDc4NmQ3Ny02MzlhLTQ5ZTAtODc3NC1iMDMyNTA2YjEwZGMxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQDDUwWBNh8KZNK56/fjLXD5cSQjvQC847vgx8wgGFKIUXg33ZlMkj2XuBEoF1LF\nAU78xY/A8vE2C7RIgo9665VY21m59ezgMSUpeYlEfUn6Rez6ibNfdUMtQlCUx9QB\nCuZEYA9XE6WDyQrHihIVq2JBGhuA26PtetFt6Ocxn6hvwUaVre+swWGpSLIgZ3XJ\nSZUW3FoNHTCdndaEFW/PVdyzDHogdegzFU3r5GVkYtDMxjBsdKrAflZ03miILvjx\ntCGA0ASxVPuY2Gu7Lln/0njantwOlQc3NtGNboN6sFZd3dqeZBw/2dhqconDZkp2\nre3bN8SH4axmS4BFgP1OgSU9AgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAGRCaU+kcdqxv8KkDugddL9d0ZwQr6QIANA0ZBZJ\nMEoobi0ALvLKFGPtF/G5ZbemlsLGMhBEbyI/aKklHpFD4T1U9HFmPBb0qDTF++Jf\nS16ZrcZVRD27Lhj0PnCnd21RR43RhHMH7URy24hPyUmXkFRQasa9oYewm6W+dtKV\noBF/gXSvCqo6qD56KbGWw61dWRgTZ7OiuDqJMK8cuiylb1AUh8cVTAAH4kAKLSJP\n4CwFSBRdrab2GLfC/XJnyv32iV20tNXaDUh4Vpt+L/cM9tupkETv+TG12y+lLI4d\nq+rTRHbZA2IM/GifdOl4ZUatvf3KK1etCJXgxdTrjgeI/Ms=\n-----END CERTIFICATE-----",
+                "common_name": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=ed786d77-639a-49e0-8774-b032506b10dc",
+                "create_time": "2022-09-15T12:19:56.704Z",
+                "expiration_time": "2032-09-12T12:20:56.704Z",
+                "sha1_fingerprint": "5c05e5188b5c4f4f7f1420d6c04b3c708105e6a9"
+              }
+            ],
+            "service_account_email_address": "p673127817994-zonzg3@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "availability_type": "ZONAL",
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": [
+                      {
+                        "retained_backups": 7,
+                        "retention_unit": "COUNT"
+                      }
+                    ],
+                    "binary_log_enabled": false,
+                    "enabled": false,
+                    "location": "",
+                    "point_in_time_recovery_enabled": false,
+                    "start_time": "14:00",
+                    "transaction_log_retention_days": 7
+                  }
+                ],
+                "collation": "",
+                "database_flags": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_size": 10,
+                "disk_type": "PD_SSD",
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": "",
+                    "authorized_networks": [],
+                    "ipv4_enabled": false,
+                    "private_network": "",
+                    "require_ssl": false
+                  }
+                ],
+                "location_preference": [
+                  {
+                    "follow_gae_application": "",
+                    "secondary_zone": "",
+                    "zone": "us-central1-c"
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "sql_server_audit_config": [],
+                "tier": "db-f1-micro",
+                "user_labels": {},
+                "version": 1
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ]
+}

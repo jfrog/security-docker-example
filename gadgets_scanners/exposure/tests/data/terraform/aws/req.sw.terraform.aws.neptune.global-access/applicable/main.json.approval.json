@@ -1,0 +1,4 @@
+{
+  "Answer": true, "Verdict": "publicly_accessible=NONE was detected",
+  "Evidence": ["            \"publicly_accessible\": true,\n", "            \"publicly_accessible\": true,\n"]
+}

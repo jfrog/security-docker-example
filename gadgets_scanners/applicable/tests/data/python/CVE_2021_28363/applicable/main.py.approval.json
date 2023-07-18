@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The vulnerable function HTTPSConnection.connect is called", "Evidence": ["HTTPSConnection.connect()"]}

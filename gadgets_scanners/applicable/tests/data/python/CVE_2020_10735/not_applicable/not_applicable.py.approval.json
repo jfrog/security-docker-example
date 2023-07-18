@@ -1,0 +1,5 @@
+{
+    "Answer": false,
+    "Verdict": "None of the vulnerable functions int/str are called with external input",
+    "Evidence": []
+}

@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "The vulnerable function py.path.svnurl.listdir is invoked by a svnurl that was initialized with external/not-safe input",
+    "Evidence": [
+        "py.path.svnurl(rev=None, path=\"http://foo.bar/svn\")"
+    ]
+}

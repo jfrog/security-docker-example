@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function yaml.full_load/load is never called",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

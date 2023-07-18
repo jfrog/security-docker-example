@@ -1,0 +1,71 @@
+{
+    "findings": [
+        {
+            "text": "References to the vulnerable functions with user input were found",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "client.global_logout(input(), name_id=name_id)",
+                            "15",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "client.parse_authn_request_response(input(), BINDING_HTTP_POST)",
+                            "29",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "saml2.saml.subject_type__from_string(input())",
+                            "43",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "saml2.samlp.ELEMENT_FROM_STRING[ArtifactResponse.c_tag]()",
+                            "45",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "saml2.samlp.ELEMENT_FROM_STRING[RequesterID.c_tag]()",
+                            "46",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "mdrpi.ELEMENT_FROM_STRING[sometag]()",
+                            "50",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "handle_ecp_authn_response(soap_message=input())",
+                            "53",
+                            "References to the vulnerable functions with user input were found"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2016_10127/applicable/main.py",
+                            "saml2.s2repoze.plugins.sp.SAML2Plugin.identify()",
+                            "55",
+                            "References to the vulnerable functions with user input were found"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

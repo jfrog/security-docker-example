@@ -1,0 +1,35 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_ecs_task_definition",
+      "name": "MyDemoMethod",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "volume": [
+              {
+                "efs_volume_configuration": {
+                  "transit_encryption": "DISABLED"
+                }
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_resource.MyDemoResource",
+            "aws_api_gateway_rest_api.MyDemoAPI"
+          ]
+        }
+      ]
+    }
+  ]
+}

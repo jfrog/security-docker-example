@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "user_volume_encryption_enabled=false was detected, root_volume_encryption_enabled=false was detected", "Evidence": ["            \"root_volume_encryption_enabled\": false\n", "            \"user_volume_encryption_enabled\": false,\n"]}

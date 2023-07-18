@@ -1,0 +1,35 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function idna.decode is called, The vulnerable function encodings.decode('idna') is called",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2022_45061/applicable/applicable.py",
+                            "idna.decode(input())",
+                            "3",
+                            "The vulnerable function idna.decode is called"
+                        ],
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2022_45061/applicable/applicable.py",
+                            "b\"FOO\".decode(\"idna\")",
+                            "4",
+                            "The vulnerable function encodings.decode('idna') is called"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

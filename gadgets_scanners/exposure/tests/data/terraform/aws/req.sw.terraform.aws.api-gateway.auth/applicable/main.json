@@ -1,0 +1,102 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.9",
+  "serial": 5,
+  "lineage": "35d9e29c-85f1-92ff-fa5e-3da71e67c2d9",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_method",
+      "name": "MyDemoMethod",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "api_key_required": false,
+            "authorization": "NONE",
+            "authorization_scopes": null,
+            "authorizer_id": null,
+            "http_method": "GET",
+            "id": "agm-svaw27axrg-vf3h2dzelj-GET",
+            "operation_name": null,
+            "request_models": null,
+            "request_parameters": null,
+            "request_validator_id": null,
+            "resource_id": "vf3h2dzelj",
+            "rest_api_id": "svaw27axrg"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_resource.MyDemoResource",
+            "aws_api_gateway_rest_api.MyDemoAPI"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_resource",
+      "name": "MyDemoResource",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "vf3h2dzelj",
+            "parent_id": "6azp13udju",
+            "path": "/mydemoresource",
+            "path_part": "mydemoresource",
+            "rest_api_id": "svaw27axrg"
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA==",
+          "dependencies": [
+            "aws_api_gateway_rest_api.MyDemoAPI"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_api_gateway_rest_api",
+      "name": "MyDemoAPI",
+      "provider": "provider[\\\"registry.terraform.io/hashicorp/aws\\\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "api_key_source": "HEADER",
+            "arn": "arn:aws:apigateway:us-west-2::/restapis/svaw27axrg",
+            "binary_media_types": [],
+            "body": null,
+            "created_date": "2022-05-06T13:44:52Z",
+            "description": "This is my API for demonstration purposes",
+            "disable_execute_api_endpoint": false,
+            "endpoint_configuration": [
+              {
+                "types": [
+                  "EDGE"
+                ],
+                "vpc_endpoint_ids": []
+              }
+            ],
+            "execution_arn": "arn:aws:execute-api:us-west-2:000000000000:svaw27axrg",
+            "id": "svaw27axrg",
+            "minimum_compression_size": -1,
+            "name": "MyDemoAPI",
+            "parameters": null,
+            "policy": "",
+            "root_resource_id": "6azp13udju",
+            "tags": null,
+            "tags_all": {}
+          },
+          "sensitive_attributes": [],
+          "private": "bnVsbA=="
+        }
+      ]
+    }
+  ]
+}

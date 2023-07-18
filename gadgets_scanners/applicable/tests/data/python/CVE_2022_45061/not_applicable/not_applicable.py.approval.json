@@ -1,0 +1,10 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable function idna.decode is never called, The vulnerable function encodings.decode('idna') is never called",
+            "evidence": [],
+            "conclusion": "positive"
+        }
+    ],
+    "conclusion": "positive"
+}

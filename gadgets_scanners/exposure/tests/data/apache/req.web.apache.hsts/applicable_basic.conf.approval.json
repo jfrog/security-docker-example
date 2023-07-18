@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache is not configured properly for the \"Strict Transport Security\" setting", "Evidence": ["header set Strict-Transport-Security \"max-age=15769000;; preload\"\n"]}

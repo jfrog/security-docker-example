@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "The option \"Strict Transport Security\" which protects against HSTS attacks is not set for nginx", "Evidence": ["    add_header Strict-Transport-Security \"max-age=15768001; includeSubdomains; preload\";\n"]}

@@ -1,0 +1,5 @@
+{
+  "Answer": true,
+  "Verdict": "privileged=True was detected",
+  "Evidence": ["            \"container_properties\": \"{\\\"command\\\":[\\\"ls\\\",\\\"-la\\\"],\\\"environment\\\":[{\\\"name\\\":\\\"VARNAME\\\",\\\"value\\\":\\\"VARVAL\\\"}],\\\"image\\\":\\\"busybox\\\",\\\"memory\\\":1024,\\\"mountPoints\\\":[{\\\"containerPath\\\":\\\"/tmp\\\",\\\"readOnly\\\":false,\\\"sourceVolume\\\":\\\"tmp\\\"}],\\\"privileged\\\":true,\\\"resourceRequirements\\\":[],\\\"secrets\\\":[],\\\"ulimits\\\":[{\\\"hardLimit\\\":1024,\\\"name\\\":\\\"nofile\\\",\\\"softLimit\\\":1024}],\\\"vcpus\\\":1,\\\"volumes\\\":[{\\\"host\\\":{\\\"sourcePath\\\":\\\"/tmp\\\"},\\\"name\\\":\\\"tmp\\\"}]}\",\n"]
+}

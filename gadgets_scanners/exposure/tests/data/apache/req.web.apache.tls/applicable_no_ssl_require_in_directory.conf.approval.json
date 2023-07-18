@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache web server is not configured to use TLS for all communication", "Evidence": ["<Directory />\n", "<DirectoryMatch /usr/html/axis-media(|-rtsp-auth)/media.(amp|3gp)>\n", "<Files \".ht*\">\n"]}

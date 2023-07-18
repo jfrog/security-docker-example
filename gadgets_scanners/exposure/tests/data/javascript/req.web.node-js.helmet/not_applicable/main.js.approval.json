@@ -1,0 +1,1 @@
+{"Answer": false, "Verdict": "Helmet is used", "Evidence": ["app.use(helmet())"]}

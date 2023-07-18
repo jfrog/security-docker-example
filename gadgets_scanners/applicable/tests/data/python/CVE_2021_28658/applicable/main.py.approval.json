@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Implementations inheriting from vulnerable FileUploadHandler and referencing unsanitized file_name located", "Evidence": ["self.file_name"]}

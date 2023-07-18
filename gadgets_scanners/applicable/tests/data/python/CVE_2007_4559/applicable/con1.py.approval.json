@@ -1,0 +1,29 @@
+{
+    "findings": [
+        {
+            "text": "The vulnerable functions tarfile.TarFile.extractall/tarfile.TarInfo.extract are called with external input",
+            "evidence": [
+                {
+                    "cell_type": "values_only",
+                    "text": "",
+                    "rows": [
+                        [
+                            "gadgets_scanners/applicable/tests/data/python/CVE_2007_4559/applicable/con1.py",
+                            "tar.extractall()",
+                            "8",
+                            "The vulnerable functions tarfile.TarFile.extractall/tarfile.TarInfo.extract are called with external input"
+                        ]
+                    ],
+                    "column_names": [
+                        "Path",
+                        "Evidence",
+                        "Line Number",
+                        "Issue Found"
+                    ]
+                }
+            ],
+            "conclusion": "negative"
+        }
+    ],
+    "conclusion": "negative"
+}

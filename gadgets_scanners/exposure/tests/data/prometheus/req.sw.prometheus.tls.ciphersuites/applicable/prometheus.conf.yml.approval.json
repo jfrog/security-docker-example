@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Weak TLS cipher suites was detected", "Evidence": ["cipher_suites: [TLS_RSA_BAD_SHA256]"]}

@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Public read access to containers was detected", "Evidence": ["            \"container_access_type\": \"container\"\n"]}

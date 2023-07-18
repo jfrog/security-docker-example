@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Password-based authentication was detected", "Evidence": ["            \"disable_password_authentication\": false,\n"]}

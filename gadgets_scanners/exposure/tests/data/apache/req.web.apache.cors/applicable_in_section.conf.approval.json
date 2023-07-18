@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Apache is configured to enable CORS", "Evidence": ["    header set Access-Control-Allow-Origin *\n"]}

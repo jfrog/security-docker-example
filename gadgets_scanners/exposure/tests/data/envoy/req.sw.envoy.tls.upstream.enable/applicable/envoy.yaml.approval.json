@@ -1,0 +1,7 @@
+{
+    "Answer": true,
+    "Verdict": "trusted_ca was not detected",
+    "Evidence": [
+        "          validation_context:\n"
+    ]
+}

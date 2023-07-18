@@ -1,0 +1,1 @@
+{"Answer": true, "Verdict": "Content-Disposition is not configured to prevent MIME sniffing", "Evidence": ["    add_header Content-Disposition \"aachment\";\n"]}

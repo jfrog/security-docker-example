@@ -1,0 +1,8 @@
+{
+    "Answer": true,
+    "Verdict": "require_client_certificate=false was detected",
+    "Evidence": [
+        "        typed_config:\n",
+        "        typed_config:\n"
+    ]
+}
