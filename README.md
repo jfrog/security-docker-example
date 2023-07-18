@@ -4,7 +4,7 @@
 To build test docker image for exposures
 
 ```shell
-$  make build-xmas-docker
+$  make build-xmas-docker 
 ```
 
 docker image is based on alpine \
