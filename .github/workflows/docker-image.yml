@@ -42,6 +42,6 @@ jobs:
         jf rt build-collect-env
         # Collect VCS details from git and add them to the build
         jf rt build-add-git
-        jf rt bdc docker-local --image-file superfrog-docker.jfrog.io/hello-frog@sha256:30f04e684493fb5ccc030969df6de0 --build-name $JFROG_CLI_BUILD_NAME --build-number ${{ github.run_number }}
+        jf rt bdc docker-local --image-file cat image-file-details --build-name $JFROG_CLI_BUILD_NAME --build-number ${{ github.run_number }}
         # Publish build info
         jf rt build-publish
