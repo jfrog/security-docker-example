@@ -143,7 +143,7 @@ COPY gadgets_scanners/exposure/tests/data/apache/req.web.apache.cors/applicable_
 # 3rd party Python - applicable
 RUN mkdir -p /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info /applicable
 COPY tests/xmas/PyYAML-5.2-py3.8.egg-info/* /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info/
-COPY gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/*.py /applicable
+COPY gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/*.py /applicable/
 COPY gadgets_scanners/applicable/tests/data/python/CVE_2021_35042/applicable/main.py /applicable/app.py
 
 # Secrets
