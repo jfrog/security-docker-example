@@ -10,10 +10,10 @@ RUN mkdir -p /exposures/node_modules
 
 
 # COPY gadgets_scanners/exposure/tests/data/hardcoded-secrets/req.secret.keys/applicable.txt \
-    /exposures/req.secret.keys.py
+#/exposures/req.secret.keys.py
 
 # COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.exec/applicable/main.js \
-    /exposures/req.web.node-js.exec.js
+# /exposures/req.web.node-js.exec.js
 
 COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.hashing/applicable/main.js \
     /exposures/req.web.node-js.hashing.js
@@ -25,10 +25,10 @@ COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.throttle/ap
     /exposures/req.web.node-js.throttle.js
 
 # COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls/applicable/main.js \
-    /exposures/req.web.node-js.tls.js
+# /exposures/req.web.node-js.tls.js
 
 # COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls-version/applicable_min_version/main.js \
-    /exposures/req.web.node-js.tls-version.js
+# /exposures/req.web.node-js.tls-version.js
 
 COPY gadgets_scanners/exposure/tests/data/python/req.sw.python.crypto.sizes/applicable_pycrypto/main.py \
     /exposures/req.sw.python.crypto.sizes.py
