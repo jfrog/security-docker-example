@@ -147,8 +147,8 @@ COPY gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/*.p
 COPY gadgets_scanners/applicable/tests/data/python/CVE_2021_35042/applicable/main.py /applicable/app.py
 
 # Secrets
-COPY gadgets_scanners/exposure/tests/data/passwords/req.pass.check-default/applicable/applicable.yaml \
-    /exposures/req.pass.check-default.yaml
+# COPY gadgets_scanners/exposure/tests/data/passwords/req.pass.check-default/applicable/applicable.yaml \
+# /exposures/req.pass.check-default.yaml
 
 FROM scratch
 COPY --from=build / /
