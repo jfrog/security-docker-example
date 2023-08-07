@@ -10,7 +10,7 @@ RUN mkdir -p /exposures/node_modules
 
 
 # COPY gadgets_scanners/exposure/tests/data/hardcoded-secrets/req.secret.keys/applicable.txt \
-#/exposures/req.secret.keys.py
+# /exposures/req.secret.keys.py
 
 # COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.exec/applicable/main.js \
 # /exposures/req.web.node-js.exec.js
