@@ -59,7 +59,7 @@ COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.eval/ap
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.eval.py
 
 # COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.process-network-input/applicable/main.py \
-    /lib/python3.8/site-packages/zstandard/req.python.supply-chain.process-network-input.py
+# /lib/python3.8/site-packages/zstandard/req.python.supply-chain.process-network-input.py
 
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.sensitive-files/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.sensitive-files.py
@@ -106,9 +106,9 @@ COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.no-r
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.enable/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.tls.upstream.enable.yaml
 # COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.no-renegotiation/applicable/envoy.yaml \
-    /etc/envoy/req.sw.envoy.tls.upstream.no-renegotiation.yaml
+# /etc/envoy/req.sw.envoy.tls.upstream.no-renegotiation.yaml
 # COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.verify-altname/applicable/envoy.yaml \
-    /etc/envoy/req.sw.envoy.tls.upstream.verify-altname.yaml
+# /etc/envoy/req.sw.envoy.tls.upstream.verify-altname.yaml
 
 # Etcd Service
 RUN mkdir -p /etc/etcd
