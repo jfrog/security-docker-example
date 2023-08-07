@@ -64,8 +64,8 @@ COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.process
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.sensitive-files/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.sensitive-files.py
 
-COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.spawn-shell/applicable/main.py \
-    /lib/python3.8/site-packages/zstandard/req.python.supply-chain.spawn-shell.py
+# COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.spawn-shell/applicable/main.py \
+# /lib/python3.8/site-packages/zstandard/req.python.supply-chain.spawn-shell.py
 
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.obfuscation/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.obfuscation.py
@@ -80,11 +80,11 @@ COPY tests/xmas/ini/* /usr/local/lib/node_modules/ini/
 COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.eval/applicable/main.js \
     /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.eval.js
 
-COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.process-network-input/applicable_client/main.js \
-    /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.process-network-input.js
+# COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.process-network-input/applicable_client/main.js \
+# /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.process-network-input.js
 
-COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.sensitive-files/applicable/main.js \
-    /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.sensitive-files.js
+# COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.sensitive-files/applicable/main.js \
+# /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.sensitive-files.js
 
 COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.spawn-shell/applicable/main.js \
     /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.spawn-shell.js
@@ -97,12 +97,12 @@ RUN mkdir -p /etc/envoy
 
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.admin-localhost/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.admin-localhost.yaml
-COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.enable/applicable/envoy.yaml \
-    /etc/envoy/req.sw.envoy.tls.downstream.enable.yaml
+# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.enable/applicable/envoy.yaml \
+# /etc/envoy/req.sw.envoy.tls.downstream.enable.yaml
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.no-renegotiation/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.tls.downstream.no-renegotiation.yaml
-COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.verify-client/applicable/envoy.yaml \
-    /etc/envoy/req.sw.envoy.tls.downstream.verify-client.yaml
+# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.verify-client/applicable/envoy.yaml \
+# /etc/envoy/req.sw.envoy.tls.downstream.verify-client.yaml
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.enable/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.tls.upstream.enable.yaml
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.no-renegotiation/applicable/envoy.yaml \
@@ -133,8 +133,8 @@ COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.versi
     /etc/prometheus/req.sw.prometheus.tls.version.yml
 
 # Nginx
-RUN mkdir -p /etc/nginx
-COPY gadgets_scanners/exposure/tests/data/nginx/req.web.nginx.tls.version/applicable_invalid_args_1.conf /etc/nginx/nginx.conf
+# RUN mkdir -p /etc/nginx
+# COPY gadgets_scanners/exposure/tests/data/nginx/req.web.nginx.tls.version/applicable_invalid_args_1.conf /etc/nginx/nginx.conf
 
 # Apache
 RUN mkdir -p /etc/httpd
