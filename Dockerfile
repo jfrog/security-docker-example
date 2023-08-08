@@ -1,19 +1,19 @@
 FROM busybox:latest as build
 
 # Create 3rd party vulenrable packages
-# COPY tests/xmas/pip.list tests/xmas/setup.sh /tmp/
-# RUN /tmp/setup.sh && rm /tmp/setup.sh /tmp/pip.list
+ COPY tests/xmas/pip.list tests/xmas/setup.sh /tmp/
+ RUN /tmp/setup.sh && rm /tmp/setup.sh /tmp/pip.list
 
 # 1st party
 RUN mkdir -p /exposures/node_modules
 
 
 
-# COPY gadgets_scanners/exposure/tests/data/hardcoded-secrets/req.secret.keys/applicable.txt \
-# /exposures/req.secret.keys.py
+COPY gadgets_scanners/exposure/tests/data/hardcoded-secrets/req.secret.keys/applicable.txt \
+ /exposures/req.secret.keys.py
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.exec/applicable/main.js \
-# /exposures/req.web.node-js.exec.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.exec/applicable/main.js \
+  /exposures/req.web.node-js.exec.js
 
 COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.hashing/applicable/main.js \
     /exposures/req.web.node-js.hashing.js
@@ -24,17 +24,17 @@ COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.helmet/appl
 COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.throttle/applicable/main.js \
     /exposures/req.web.node-js.throttle.js
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls/applicable/main.js \
-# /exposures/req.web.node-js.tls.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls/applicable/main.js \
+ /exposures/req.web.node-js.tls.js
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls-version/applicable_min_version/main.js \
-# /exposures/req.web.node-js.tls-version.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.web.node-js.tls-version/applicable_min_version/main.js \
+  /exposures/req.web.node-js.tls-version.js
 
 COPY gadgets_scanners/exposure/tests/data/python/req.sw.python.crypto.sizes/applicable_pycrypto/main.py \
     /exposures/req.sw.python.crypto.sizes.py
 
-# COPY gadgets_scanners/exposure/tests/data/python/req.sw.python.crypto.standard/applicable/main.py \
-# /exposures/req.sw.python.crypto.standard.py
+COPY gadgets_scanners/exposure/tests/data/python/req.sw.python.crypto.standard/applicable/main.py \
+ /exposures/req.sw.python.crypto.standard.py
 
 COPY gadgets_scanners/exposure/tests/data/python/req.sw.python.remove-commands/applicable/main.py \
     /exposures/req.sw.python.remove-commands.py
@@ -64,14 +64,14 @@ COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.process
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.sensitive-files/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.sensitive-files.py
 
-# COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.spawn-shell/applicable/main.py \
-# /lib/python3.8/site-packages/zstandard/req.python.supply-chain.spawn-shell.py
+COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.spawn-shell/applicable/main.py \
+  /lib/python3.8/site-packages/zstandard/req.python.supply-chain.spawn-shell.py
 
-# COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.obfuscation/applicable/main.py \
-# /lib/python3.8/site-packages/zstandard/req.python.supply-chain.obfuscation.py
+COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.obfuscation/applicable/main.py \
+  /lib/python3.8/site-packages/zstandard/req.python.supply-chain.obfuscation.py
 
-# COPY gadgets_scanners/exposure/tests/data/python/req.python.malware-domain-generation/applicable/main.py \
-# /lib/python3.8/site-packages/zstandard/req.python.malware-domain-generation.py
+COPY gadgets_scanners/exposure/tests/data/python/req.python.malware-domain-generation/applicable/main.py \
+ /lib/python3.8/site-packages/zstandard/req.python.malware-domain-generation.py
 
 # 3rd party JS
 RUN mkdir -p /usr/local/lib/node_modules/ini
@@ -83,8 +83,8 @@ COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.eva
 COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.process-network-input/applicable_client/main.js \
  /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.process-network-input.js
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.sensitive-files/applicable/main.js \
-# /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.sensitive-files.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.sensitive-files/applicable/main.js \
+  /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.sensitive-files.js
 
 COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.spawn-shell/applicable/main.js \
     /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.spawn-shell.js
@@ -123,8 +123,8 @@ RUN mkdir -p /etc/prometheus
 
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.basic-auth/applicable/prometheus.conf.yml \
     /etc/prometheus/req.sw.prometheus.basic-auth.yml
-# COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls/applicable/prometheus.conf.yml \
-# /etc/prometheus/req.sw.prometheus.tls.yml
+COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls/applicable/prometheus.conf.yml \
+/etc/prometheus/req.sw.prometheus.tls.yml
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.ciphersuites/applicable/prometheus.conf.yml \
     /etc/prometheus/req.sw.prometheus.tls.ciphersuites.yml
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.mutual/applicable/prometheus.conf.yml \
