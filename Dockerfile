@@ -127,28 +127,28 @@ COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.basic-aut
 # /etc/prometheus/req.sw.prometheus.tls.yml
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.ciphersuites/applicable/prometheus.conf.yml \
     /etc/prometheus/req.sw.prometheus.tls.ciphersuites.yml
-# COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.mutual/applicable/prometheus.conf.yml \
-# /etc/prometheus/req.sw.prometheus.tls.mutual.yml
+COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.mutual/applicable/prometheus.conf.yml \
+ /etc/prometheus/req.sw.prometheus.tls.mutual.yml
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.version/applicable/prometheus.conf.yml \
     /etc/prometheus/req.sw.prometheus.tls.version.yml
 
 # Nginx
 # RUN mkdir -p /etc/nginx
-# COPY gadgets_scanners/exposure/tests/data/nginx/req.web.nginx.tls.version/applicable_invalid_args_1.conf /etc/nginx/nginx.conf
+COPY gadgets_scanners/exposure/tests/data/nginx/req.web.nginx.tls.version/applicable_invalid_args_1.conf /etc/nginx/nginx.conf
 
 # Apache
 # RUN mkdir -p /etc/httpd
-# COPY gadgets_scanners/exposure/tests/data/apache/req.web.apache.cors/applicable_wildcard.conf /etc/httpd/httpd.conf
+COPY gadgets_scanners/exposure/tests/data/apache/req.web.apache.cors/applicable_wildcard.conf /etc/httpd/httpd.conf
 
 # 3rd party Python - applicable
-# RUN mkdir -p /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info /applicable
-# COPY tests/xmas/PyYAML-5.2-py3.8.egg-info/* /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info/
-# COPY gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/*.py /applicable/
-# COPY gadgets_scanners/applicable/tests/data/python/CVE_2021_35042/applicable/main.py /applicable/app.py
+RUN mkdir -p /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info /applicable
+COPY tests/xmas/PyYAML-5.2-py3.8.egg-info/* /lib/python3.8/site-packages/PyYAML-5.2-py3.8.egg-info/
+COPY gadgets_scanners/applicable/tests/data/python/yaml-full-load/applicable/*.py /applicable/
+COPY gadgets_scanners/applicable/tests/data/python/CVE_2021_35042/applicable/main.py /applicable/app.py
 
 # Secrets
-# COPY gadgets_scanners/exposure/tests/data/passwords/req.pass.check-default/applicable/applicable.yaml \
-# /exposures/req.pass.check-default.yaml
+COPY gadgets_scanners/exposure/tests/data/passwords/req.pass.check-default/applicable/applicable.yaml \
+  /exposures/req.pass.check-default.yaml
 
 FROM scratch
 COPY --from=build / /
