@@ -52,14 +52,14 @@ COPY gadgets_scanners/exposure/tests/data/python/req.web.flask.https-redirect/ap
 RUN mkdir -p /lib/python3.8/site-packages/zstandard-0.17.0.dist-info \
     /lib/python3.8/site-packages/zstandard
 
-# COPY tests/xmas/zstandard-0.17.0.dist-info/* /lib/python3.8/site-packages/zstandard-0.17.0.dist-info/
-# COPY tests/xmas/zstandard/* /lib/python3.8/site-packages/zstandard/
+COPY tests/xmas/zstandard-0.17.0.dist-info/* /lib/python3.8/site-packages/zstandard-0.17.0.dist-info/
+COPY tests/xmas/zstandard/* /lib/python3.8/site-packages/zstandard/
 
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.eval/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.eval.py
 
-# COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.process-network-input/applicable/main.py \
-# /lib/python3.8/site-packages/zstandard/req.python.supply-chain.process-network-input.py
+COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.process-network-input/applicable/main.py \
+  /lib/python3.8/site-packages/zstandard/req.python.supply-chain.process-network-input.py
 
 COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.sensitive-files/applicable/main.py \
     /lib/python3.8/site-packages/zstandard/req.python.supply-chain.sensitive-files.py
@@ -77,11 +77,11 @@ COPY gadgets_scanners/exposure/tests/data/python/req.python.supply-chain.sensiti
 RUN mkdir -p /usr/local/lib/node_modules/ini
 COPY tests/xmas/ini/* /usr/local/lib/node_modules/ini/
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.eval/applicable/main.js \
-# /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.eval.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.eval/applicable/main.js \
+  /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.eval.js
 
-# COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.process-network-input/applicable_client/main.js \
-# /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.process-network-input.js
+COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.process-network-input/applicable_client/main.js \
+ /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.process-network-input.js
 
 # COPY gadgets_scanners/exposure/tests/data/javascript/req.nodejs.supply-chain.sensitive-files/applicable/main.js \
 # /usr/local/lib/node_modules/ini/req.nodejs.supply-chain.sensitive-files.js
@@ -97,18 +97,18 @@ RUN mkdir -p /etc/envoy
 
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.admin-localhost/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.admin-localhost.yaml
-# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.enable/applicable/envoy.yaml \
-# /etc/envoy/req.sw.envoy.tls.downstream.enable.yaml
+COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.enable/applicable/envoy.yaml \
+   /etc/envoy/req.sw.envoy.tls.downstream.enable.yaml
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.no-renegotiation/applicable/envoy.yaml \
-    /etc/envoy/req.sw.envoy.tls.downstream.no-renegotiation.yaml
-# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.verify-client/applicable/envoy.yaml \
-# /etc/envoy/req.sw.envoy.tls.downstream.verify-client.yaml
+   /etc/envoy/req.sw.envoy.tls.downstream.no-renegotiation.yaml
+COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.downstream.verify-client/applicable/envoy.yaml \
+ /etc/envoy/req.sw.envoy.tls.downstream.verify-client.yaml
 COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.enable/applicable/envoy.yaml \
     /etc/envoy/req.sw.envoy.tls.upstream.enable.yaml
-# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.no-renegotiation/applicable/envoy.yaml \
-# /etc/envoy/req.sw.envoy.tls.upstream.no-renegotiation.yaml
-# COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.verify-altname/applicable/envoy.yaml \
-# /etc/envoy/req.sw.envoy.tls.upstream.verify-altname.yaml
+COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.no-renegotiation/applicable/envoy.yaml \
+ /etc/envoy/req.sw.envoy.tls.upstream.no-renegotiation.yaml
+COPY gadgets_scanners/exposure/tests/data/envoy/req.sw.envoy.tls.upstream.verify-altname/applicable/envoy.yaml \
+ /etc/envoy/req.sw.envoy.tls.upstream.verify-altname.yaml
 
 # Etcd Service
 RUN mkdir -p /etc/etcd
