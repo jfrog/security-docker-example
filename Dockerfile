@@ -132,6 +132,9 @@ COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.mutua
 COPY gadgets_scanners/exposure/tests/data/prometheus/req.sw.prometheus.tls.version/applicable/prometheus.conf.yml \
     /etc/prometheus/req.sw.prometheus.tls.version.yml
 
+FROM scratch
+COPY --from=build / /
+
 # Nginx
 # RUN mkdir -p /etc/nginx
 COPY gadgets_scanners/exposure/tests/data/nginx/req.web.nginx.tls.version/applicable_invalid_args_1.conf /etc/nginx/nginx.conf
@@ -150,5 +153,4 @@ COPY gadgets_scanners/applicable/tests/data/python/CVE_2021_35042/applicable/mai
 COPY gadgets_scanners/exposure/tests/data/passwords/req.pass.check-default/applicable/applicable.yaml \
   /exposures/req.pass.check-default.yaml
 
-FROM scratch
-COPY --from=build / /
+
