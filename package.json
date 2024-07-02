@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parse-url": "^6.0.5"
+    "parse-url": "^8.1.0"
   }
 }
