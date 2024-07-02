@@ -1,0 +1,17 @@
+{
+  "name": "security-docker-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parse-url": "^6.0.5"
+  }
+}
