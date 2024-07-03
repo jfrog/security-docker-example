@@ -33,7 +33,7 @@ jobs:
 
     - name: Describe Job Summary 
       run: echo "### Get full traceability for the artifacts created by this Github Actions workflow, directly inside the JFrog Platform." >> $GITHUB_STEP_SUMMARY
-        
+
     - name: Build Tag and push Docker Image
       env:
         IMAGE_NAME: ${{ vars.JF_URL }}/${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}
