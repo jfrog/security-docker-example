@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "parse-url": "^6.0.5"
+    "parse-url": "^6.0.5",
+    "lodash": "^4.17.0"
   },
   "author": "",
   "license": "ISC"
