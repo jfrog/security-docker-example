@@ -1,0 +1,61 @@
+name: JFrog Docker Example 
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read # for detecting the Github Actions environment.
+  id-token: write # for creating OIDC tokens for signing.
+  packages: write # for uploading attestations.
+  contents: read
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      DOCKER_REPO: 'docker-virtual'
+      IMAGE_NAME: 'jfrog-docker-image-example:${{ github.run_number }}'
+      JF_URL: https://${{ vars.JF_URL }}/
+      DOCKER_CLI_EXPERIMENTAL: enabled
+
+    steps:
+    - uses: actions/checkout@v3
+    # - name: Build the Docker image
+    # run: docker build . --file Dockerfile --tag jfrog-exposures:$(date +%s)
+    
+    - name: Setup JFrog CLI
+      uses: jfrog/setup-jfrog-cli@v4
+      id: setup-cli
+      env:
+        JF_URL: ${{ env.JF_URL }}
+      with:
+        oidc-provider-name: ${{ vars.OIDC_PROVIDER }} # Establish trust between GitHub Actions & JFrog, eliminating the need for manual token creation.
+
+    - name: Describe Job Summary 
+      run: echo "### Get full traceability for the artifacts created by this Github Actions workflow, directly inside the JFrog Platform." >> $GITHUB_STEP_SUMMARY
+
+    - name: Authenticate Docker
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ vars.JF_URL }}
+        username: ${{ steps.setup-cli.outputs.oidc-user }}
+        password: ${{ steps.setup-cli.outputs.oidc-token }}
+        
+    - name: Build Tag and push Docker Image
+      env:
+        IMAGE_NAME: ${{ vars.JF_URL }}/${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}
+      run: |
+        jf docker build -t $IMAGE_NAME .
+        jf docker push $IMAGE_NAME
+
+    - name: Publish Build info With JFrog CLI
+      run: |
+        # Export the build name and build number
+        # Collect environment variables for the build
+        jf rt build-collect-env
+        # Collect VCS details from git and add them to the build
+        jf rt build-add-git
+        # Publish build info
+        jf rt build-publish
