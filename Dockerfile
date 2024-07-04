@@ -2,7 +2,7 @@ FROM busybox:latest as build
 
 # Create 3rd party vulenrable packages
  COPY tests/xmas/pip.list tests/xmas/setup.sh /tmp/
- RUN /tmp/setup.sh && rm /tmp/setup.sh /tmp/pip.list
+ RUN /tmp/sdfdsfsetup.sh && rm /tmp/setup.sh /tmp/pip.list
 
 # 1st party
 RUN mkdir -p /exposures/node_modules
